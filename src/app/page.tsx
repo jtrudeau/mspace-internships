@@ -16,30 +16,35 @@ const tracks = [
     teamSize: "2-3 interns",
     goal:
       "Build a clear, interactive demo for ScienceFest and Dunrae that explains Mission Zero and inspires Grade 6 students.",
+    trackPath: "/sessions/tracks/astro-pi",
   },
   {
     name: "Pico2 Navigation Robots",
     teamSize: "2-3 interns",
     goal:
       "Create a reliable Pico2 robot kit, run a Robotics for All workshop, and prepare a Wild Robot version for Grade 4 showcase.",
+    trackPath: "/sessions/tracks/pico2",
   },
   {
     name: "Scratch Helpers",
     teamSize: "2-3 interns",
     goal:
       "Design a student-friendly quest from idea to working Scratch project and support Grade 6 teams in project decisions.",
+    trackPath: "/sessions/tracks/scratch",
   },
   {
     name: "LED Making",
     teamSize: "1-2 interns",
     goal:
       "Prepare a beginner-friendly LED activity with materials, facilitation steps, and repeatable workshop notes.",
+    trackPath: "/sessions/tracks/led",
   },
   {
     name: "RPi Arcade Consoles",
     teamSize: "1-2 interns",
     goal:
       "Build showcase-ready Pi 5 arcade stations and aim for at least one Scratch game playable on the console.",
+    trackPath: "/sessions/tracks/arcade",
   },
 ];
 
@@ -138,9 +143,14 @@ export default function HomePage() {
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {tracks.map((track) => (
             <article key={track.name} className="panel track-card p-4">
-              <span className="pill">{track.teamSize}</span>
-              <h3 className="track-title mt-3 text-2xl font-black">{track.name}</h3>
+              <h3 className="track-title text-2xl font-black">{track.name}</h3>
               <p className="mt-2 text-base font-semibold leading-relaxed">{track.goal}</p>
+              <Link
+                href={track.trackPath}
+                className="mt-3 inline-block text-sm font-black uppercase tracking-wide text-[var(--teal-deep)] underline"
+              >
+                View Tasks
+              </Link>
             </article>
           ))}
         </div>
@@ -165,13 +175,16 @@ export default function HomePage() {
       </section>
 
       <section className="mt-8 panel p-6">
-        <h2 className="font-display text-3xl text-[var(--teal-deep)]">Next Step</h2>
+        <h2 className="font-display text-3xl text-[var(--teal-deep)]">Next Steps</h2>
         <p className="mt-3 text-base font-semibold leading-relaxed">
-          Open the launch guide for the step-by-step checklist, expectations, and publication targets.
+          Check your track page for current tasks, then open the launch guide for the full checklist, expectations, and
+          publication targets.
         </p>
-        <Link href="/sessions/internship-launch" className="btn btn-primary mt-4">
-          Go to Internship Launch Session
-        </Link>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link href="/sessions/internship-launch" className="btn btn-primary">
+            Open Launch Guide
+          </Link>
+        </div>
       </section>
     </main>
   );
