@@ -146,7 +146,7 @@ export default function HomePage() {
               <h3 className="track-title text-2xl font-black">{track.name}</h3>
               <p className="mt-2 text-base font-semibold leading-relaxed">{track.goal}</p>
               <Link
-                href={track.trackPath}
+                href={track.trackPath as never}
                 className="mt-3 inline-block text-sm font-black uppercase tracking-wide text-[var(--teal-deep)] underline"
               >
                 View Tasks
