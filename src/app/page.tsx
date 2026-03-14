@@ -138,7 +138,7 @@ export default function HomePage() {
       <section id="tracks" className="mt-8 panel p-6">
         <h2 className="font-display text-3xl text-[var(--teal-deep)]">Project Tracks</h2>
         <p className="mt-3 text-base font-semibold leading-relaxed">
-          Each track has a different build surface, but all tracks land in classroom impact and public sharing.
+          Each track has a different build surface. Open a track page to view its task changelog and current resource links.
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {tracks.map((track) => (
@@ -149,7 +149,7 @@ export default function HomePage() {
                 href={track.trackPath as never}
                 className="mt-3 inline-block text-sm font-black uppercase tracking-wide text-[var(--teal-deep)] underline"
               >
-                View Tasks
+                View Changelog
               </Link>
             </article>
           ))}
@@ -177,8 +177,8 @@ export default function HomePage() {
       <section className="mt-8 panel p-6">
         <h2 className="font-display text-3xl text-[var(--teal-deep)]">Next Steps</h2>
         <p className="mt-3 text-base font-semibold leading-relaxed">
-          Check your track page for current tasks, then open the launch guide for the full checklist, expectations, and
-          publication targets.
+          Check your track page for the task changelog, then open the launch guide for the full checklist,
+          expectations, and publication targets.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/sessions/internship-launch" className="btn btn-primary">

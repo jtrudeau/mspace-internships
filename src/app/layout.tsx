@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dawson makerSPACE Internships Hub",
   description:
-    "Student and family hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources.",
+    "Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources.",
 };
 
 type RootLayoutProps = Readonly<{
