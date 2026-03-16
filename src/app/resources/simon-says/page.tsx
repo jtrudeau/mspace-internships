@@ -1,4 +1,7 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
+
+import CodeBlock from "../CodeBlock";
 
 const basePath = process.env.BASE_PATH ?? "/mspace-internships";
 
@@ -422,15 +425,7 @@ void wrong_sequence()
   delay(1000);
 }`;
 
-function CodeBlock({ code }: { code: string }) {
-  return (
-    <pre className="mt-4 overflow-x-auto border-2 border-[var(--ink)] bg-[#fffdf7] p-4 text-sm leading-6 text-[var(--ink)]">
-      <code>{code}</code>
-    </pre>
-  );
-}
-
-function Tip({ title, children }: { title: string; children: React.ReactNode }) {
+function Tip({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className="mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4">
       <p className="text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]">{title}</p>
@@ -661,6 +656,13 @@ export default function SimonSaysResourcePage() {
       <section className="mt-8 panel p-6">
         <h2 className="font-display text-3xl text-[var(--teal-deep)]">Full Code</h2>
         <CodeBlock code={fullCode} />
+      </section>
+
+      <section className="mt-8 panel p-6">
+        <h2 className="font-display text-3xl text-[var(--teal-deep)]">Attribution</h2>
+        <p className="mt-3 text-base font-semibold leading-relaxed">
+          Original Simon Says project by Lawrence Liang, with Tawfiq Jawhar as collaborator.
+        </p>
       </section>
     </main>
   );
