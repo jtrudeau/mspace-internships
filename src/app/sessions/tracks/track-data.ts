@@ -171,6 +171,51 @@ export const trackContent = {
       "Prepare a beginner-friendly LED activity with materials, facilitation steps, and repeatable workshop notes.",
     updates: [
       {
+        date: "March 16, 2026",
+        title: "Simon Says Instructions",
+        summary:
+          "Use the Simon Says build from the LED curriculum as the current prototype reference. The source version is intermediate-level, so part of the work is building it, understanding it, and deciding what needs to be simplified for beginners. The full instructions and code now live on a dedicated resource page.",
+        tasks: [
+          {
+            label:
+              "Open the Simon Says resource page for the full instructions, wiring diagram, staged code walkthrough, and complete code.",
+            url: "/resources/simon-says",
+          },
+          {
+            label:
+              "Confirm the Simon Says parts list: Arduino Uno, 16 jumper wires, 5 switches, 4 LEDs, 4 x 220 ohm resistors, and 5 x 10k ohm resistors.",
+          },
+          {
+            label:
+              "Set up the breadboard power rails from 5V and GND before wiring the game controls.",
+          },
+          {
+            label:
+              "Place 5 push buttons across the breadboard, leaving space between them so the layout stays readable.",
+          },
+          {
+            label:
+              "Wire the start button first using pin A4 and a 10k resistor.",
+          },
+          {
+            label:
+              "Wire the 4 game buttons and 4 LEDs using analog pins A0 to A3 for the switches and digital pins 5, 4, 3, and 2 for the lights.",
+          },
+          {
+            label:
+              "Build the code in stages: pin declarations, setup and light initialization, random sequence generation, player input checking, and right/wrong feedback.",
+          },
+          {
+            label:
+              "Test the full play loop: start button, sequence playback, player repeat, wrong answer signal, and 3-life reset.",
+          },
+          {
+            label:
+              "Document what is confusing, what works reliably, and what should be simplified for absolute beginners.",
+          },
+        ],
+      },
+      {
         date: "March 14, 2026",
         title: "Study Break Sprint",
         summary:
@@ -231,13 +276,13 @@ export const trackContent = {
   scratch: {
     name: "Scratch Helpers",
     goal:
-      "Support Grade 6 teams in project decisions and help them move from idea to clear build steps.",
+      "Support Grade 6 teams during build sessions by helping them clarify their game idea, resolve one blocker at a time, and move toward one clear next step.",
     updates: [
       {
         date: "March 14, 2026",
         title: "Study Break Sprint",
         summary:
-          "Study the Grade 6 Scratch hub, identify the real blockers teams are facing, and build a helper question loop plus helper resources that help teams move forward one step at a time.",
+          "Study the Grade 6 Scratch hub, identify where teams are getting stuck, and prepare a simple support routine for class: review a team's page, ask a few useful questions, give one next step or helper resource, and check back on what changed.",
         tasks: [
           {
             label:
@@ -260,7 +305,7 @@ export const trackContent = {
           },
           {
             label:
-              "Prepare a short set of questions you can ask a team to find the next thing they need.",
+              "Prepare a short set of questions you can ask a team to figure out where they are stuck right now.",
           },
           {
             label:
@@ -268,7 +313,11 @@ export const trackContent = {
           },
           {
             label:
-              "Draft a helper workflow for reviewing a team page, asking useful questions, identifying one blocker, and choosing one next resource.",
+              "Draft an on-site support workflow for reviewing a team page, checking the team's links and notes, identifying one blocker, giving one next step, and checking back after the team has tried it.",
+          },
+          {
+            label:
+              "Keep notes on what kind of example Scratch build would be most useful to create later as a model for teams.",
           },
           {
             label:

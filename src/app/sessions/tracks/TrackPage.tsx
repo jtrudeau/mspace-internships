@@ -59,7 +59,18 @@ export default function TrackPage({ track }: TrackPageProps) {
                   {update.tasks.map((task) => (
                     <li key={task.label}>
                       {task.label}
-                      {task.url && (
+                      {task.url?.startsWith("/") && (
+                        <>
+                          {" "}
+                          <Link
+                            href={task.url as never}
+                            className="inline-block text-[var(--teal-deep)] underline"
+                          >
+                            open resource
+                          </Link>
+                        </>
+                      )}
+                      {task.url && !task.url.startsWith("/") && (
                         <>
                           {" "}
                           <a
