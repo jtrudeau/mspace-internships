@@ -1,0 +1,315 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","604","static/chunks/app/resources/simon-says/page-cd1330056dc48962.js"],""]
+e:I[7150,[],""]
+:HL["/mspace-internships/_next/static/css/a7ef9add0a667cef.css","style"]
+0:{"P":null,"b":"fQosSslLf05DAs7WioKJt","p":"/mspace-internships","c":["","resources","simon-says",""],"i":false,"f":[[["",{"children":["resources",{"children":["simon-says",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mspace-internships/_next/static/css/a7ef9add0a667cef.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen antialiased","children":["$","div",null,{"className":"relative flex min-h-screen flex-col","children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t-4 border-[var(--ink)] bg-transparent py-6","children":["$","div",null,{"className":"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8","children":["$","p",null,{"className":"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]","children":"Dawson makerSPACE Internships · DG-STEAM · CoLearn"}]}]}]]}]}]}]]}],{"children":["resources",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["simon-says",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8","children":[["$","section",null,{"className":"panel p-6 sm:p-8","children":[["$","span",null,{"className":"tag","children":"Resources · LED Making"}],["$","h1",null,{"className":"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl","children":"Simon Says Game"}],["$","p",null,{"className":"mt-4 max-w-3xl text-xl font-semibold leading-relaxed","children":"This page posts the Simon Says instructions and code pulled from the current LED curriculum source so interns can work from one stable reference inside the internship hub."}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-3","children":[["$","$L4",null,{"href":"/resources","className":"btn btn-secondary","children":"Back to Resources"}],["$","$L4",null,{"href":"/sessions/tracks/led","className":"btn btn-primary","children":"Back to LED Track"}]]}]]}],["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Overview"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"This project is oriented towards intermediate Arduino developers with a basic understanding of Arduino and C++. Through this game, we will be going through a mix of multiple components such as LEDs and Switches."}],["$","div",null,{"className":"mt-6 grid gap-6 md:grid-cols-2","children":["$L5","$L6"]}]]}],"$L7","$L8","$L9","$La","$Lb"]}],null,"$Lc"]}],{},null,false]},null,false]},null,false]},null,false],"$Ld",false]],"m":"$undefined","G":["$e",[]],"s":false,"S":true}
+f:I[8874,["619","static/chunks/619-ba102abea3e3d0e4.js","604","static/chunks/app/resources/simon-says/page-cd1330056dc48962.js"],"default"]
+25:I[4431,[],"OutletBoundary"]
+27:I[5278,[],"AsyncMetadataOutlet"]
+29:I[4431,[],"ViewportBoundary"]
+2b:I[4431,[],"MetadataBoundary"]
+2c:"$Sreact.suspense"
+5:["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"Prerequisites"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno"}],["$","li",null,{"children":"LED"}],["$","li",null,{"children":"Switches"}],["$","li",null,{"children":"Resistors"}],["$","li",null,{"children":"Programming Basics"}]]}]]}]
+6:["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"List Of Components"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno Board"}],["$","li",null,{"children":"16 M - M Wires"}],["$","li",null,{"children":"5 Switches"}],["$","li",null,{"children":"4 LED Lights"}],["$","li",null,{"children":"4 220Ω Resistors"}],["$","li",null,{"children":"5 10kΩ Resistors"}]]}]]}]
+7:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"How does it work?"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Simon Says is a game where the player needs to memorize a sequence of 4 lights and repeat it once it is complete. When a user presses the start button, it will generate a sequence of 4 blinking lights that will be played. Once the sequence is completed, the user will need to repeat the sequence in order by pressing on the switches. When the user has input the wrong sequence, it will blink fast. They will have 3 lives before the game is over."}]]}]
+8:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Set Up"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Using a red and black wire, connect it from the 5 volt (5V) pin to the positive row and the ground (GND) pin to the negative row of the breadboard."}],["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":"Afterward, put 5 push buttons along the middle of the breadboard like in the picture with 3 pins separating each one of them."}],["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":"We will now set up the button to start the game, which will be the first button. Connect a wire from the A4 pin to the right leg of the button. Then, with a 10k ohm resistor, connect it under the right leg to the positive row of the breadboard. Finally, connect a wire from the left leg of the button to the negative row on the breadboard."}],["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":"Once that is done, we will be setting up the LEDs and buttons to run the game. Using a wire, connect it from the 2nd digital pin to the second socket on a column to the right of the button. Then, using a 220 ohm resistor, connect it horizontally from the third socket of the same row. With an LED, connect it from the end of the resistor to the right leg of the button. From the right leg of the button, connect a wire to the negative row of the breadboard. After, connect a wire from the 1st Analog pin (A1) to the left leg of the button, and a 10k ohm resistor from that wire to the positive row of the breadboard."}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"Tip"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":"LED's current goes from the long leg to the short leg, from the Anode to the Cathode."}]]}],["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":"Repeat this process with every button left."}],["$","div",null,{"className":"mt-6 panel track-card p-4","children":["$","img",null,{"src":"/mspace-internships/images/resources/simon-says/simon_says_schema_fritzing.png","alt":"Simon Says fritzing diagram","className":"h-auto w-full"}]}]]}]
+9:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Coding"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"First, you will need to declare your light and switch pins."}],["$","$Lf",null,{"code":"const int switch1 = A0;\nconst int switch2 = A1;\nconst int switch3 = A2;\nconst int switch4 = A3;\n\nconst int start_switch = A4;\n\nconst int light1 = 5;\nconst int light2 = 4;\nconst int light3 = 3;\nconst int light4 = 2;"}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"Tip: Why not hard code the values as we code?"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":"This is a safe practice that allows the pins to be set to specific numbers. When you need to change the pins, you can refer to these values instead of changing them individually. It can become messy if you have a lot of code."}]]}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Inside the ",["$","code",null,{"children":"void setup()"}]," function, you can set the pin modes for the LEDs and switches as such:"]}],["$","$Lf",null,{"code":"void setup() {\n  pinMode(switch1, INPUT);\n  pinMode(switch2, INPUT);\n  pinMode(switch3, INPUT);\n  pinMode(switch4, INPUT);\n\n  pinMode(light1, OUTPUT);\n  pinMode(light2, OUTPUT);\n  pinMode(light3, OUTPUT);\n  pinMode(light4, OUTPUT);\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Once that is done, you can set the ",["$","code",null,{"children":"pinMode"}]," for each light to ",["$","code",null,{"children":"LOW"}]," to have the lights off when the project starts."]}],["$","$Lf",null,{"code":"void setup() {\n  pinMode(switch1, INPUT);\n  pinMode(switch2, INPUT);\n  pinMode(switch3, INPUT);\n  pinMode(switch4, INPUT);\n\n  pinMode(light1, OUTPUT);\n  pinMode(light2, OUTPUT);\n  pinMode(light3, OUTPUT);\n  pinMode(light4, OUTPUT);\n\n  digitalWrite(light1, LOW);\n  digitalWrite(light2, LOW);\n  digitalWrite(light3, LOW);\n  digitalWrite(light4, LOW);\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":"Certain attributes are needed for this game to work. For example, we will need the sequence size, an array of integers to store a generated sequence, an array of integers to store the sequence input, an integer value for the number of lives the player has, an integer value for the number of lives left, and a boolean value to indicate if the game is started or not. At the beginning of the code, right after where we defined the lights and switches, we will declare the following attributes."}],["$","$Lf",null,{"code":"const int sequence_size = 4;\nint sequence[sequence_size];\nint input_sequence[sequence_size];\n\nbool started = false;\nconst int chances = 3;\nint errors = 0;"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Inside the ",["$","code",null,{"children":"void loop()"}],", we will be checking if the has pressed the start button to begin the game, if the player has exceeded their number of errors to end the game and to generate the sequence and wait for the sequence if the game is running."]}],["$","$Lf",null,{"code":"void loop()\n{\n  if (errors == chances)\n  {\n     errors = 0;\n    error_repetition = 3;\n    started = false;\n  }\n  if (digitalRead(start_switch) == LOW && started == false)\n  {\n    started = true;    \n  }\n  if (started == true && errors < chances)\n  {\n    set_sequence();\n    get_sequence();\n  }\n}"}],"$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23"]}]
+24:Tf73,const int switch1 = A0;
+const int switch2 = A1;
+const int switch3 = A2;
+const int switch4 = A3;
+
+const int start_switch = A4;
+
+const int light1 = 5;
+const int light2 = 4;
+const int light3 = 3;
+const int light4 = 2;
+
+const int sequence_size = 4;
+int sequence[sequence_size];
+int input_sequence[sequence_size];
+
+bool started = false;
+const int chances = 3;
+int errors = 0;
+
+int error_repetition = 3;
+
+void setup() {
+  pinMode(switch1, INPUT);
+  pinMode(switch2, INPUT);
+  pinMode(switch3, INPUT);
+  pinMode(switch4, INPUT);
+
+  pinMode(light1, OUTPUT);
+  pinMode(light2, OUTPUT);
+  pinMode(light3, OUTPUT);
+  pinMode(light4, OUTPUT);
+
+  digitalWrite(light1, LOW);
+  digitalWrite(light2, LOW);
+  digitalWrite(light3, LOW);
+  digitalWrite(light4, LOW);
+}
+
+void loop()
+{
+  if (errors == chances)
+  {
+     errors = 0;
+    error_repetition = 3;
+    started = false;
+  }
+  if (digitalRead(start_switch) == LOW && started == false)
+  {
+    started = true;    
+  }
+  if (started == true && errors < chances)
+  {
+    set_sequence();
+    get_sequence();
+  }
+}
+
+void set_sequence()
+{
+  randomSeed(millis());
+
+  for (int i = 0; i < sequence_size; i++)
+  {
+    sequence[i] = random(2,6);
+  }
+
+  digitalWrite(light1, LOW);
+  digitalWrite(light2, LOW);
+  digitalWrite(light3, LOW);
+  digitalWrite(light4, LOW);
+
+  for (int i = 0; i < sequence_size; i++)
+  {
+    digitalWrite(sequence[i], HIGH);
+    delay(1000);
+    digitalWrite(sequence[i], LOW);
+    delay(200);
+  }
+}
+
+void get_sequence()
+{
+  int flag = 0;
+
+  for (int i = 0; i < sequence_size; i++)
+  {
+    flag = 0;
+    while(flag == 0)
+    {
+      if (digitalRead(switch1) == LOW)
+      {
+        digitalWrite(light1, HIGH);
+        input_sequence[i] = 5;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light1, LOW);
+       }
+
+      if (digitalRead(switch2) == LOW)
+      {
+        digitalWrite(light2, HIGH);
+        input_sequence[i] = 4;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light2, LOW);
+       }
+
+      if (digitalRead(switch3) == LOW)
+      {
+        digitalWrite(light3, HIGH);
+        input_sequence[i] = 3;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light3, LOW);
+      }
+
+      if (digitalRead(switch4) == LOW)
+      {
+        digitalWrite(light4, HIGH);
+        input_sequence[i] = 2;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light4, LOW);
+      }
+   }
+    }
+  right_sequence();
+}
+
+void right_sequence()
+{
+
+    digitalWrite(light1, LOW);
+    digitalWrite(light2, LOW);
+    digitalWrite(light3, LOW);
+    digitalWrite(light4, LOW);
+    delay(500);
+
+    digitalWrite(light1, HIGH);
+    digitalWrite(light2, HIGH);
+    digitalWrite(light3, HIGH);
+    digitalWrite(light4, HIGH);
+  
+  delay(500);
+    digitalWrite(light1, LOW);
+    digitalWrite(light2, LOW);
+    digitalWrite(light3, LOW);
+    digitalWrite(light4, LOW);
+    delay(1000);
+}
+
+void wrong_sequence()
+{
+  for (int i = 0; i < error_repetition; i++)
+  {
+      digitalWrite(light1, LOW);
+      digitalWrite(light2, LOW);
+      digitalWrite(light3, LOW);
+      digitalWrite(light4, LOW);
+      delay(200);
+      digitalWrite(light1, HIGH);
+      digitalWrite(light2, HIGH);
+      digitalWrite(light3, HIGH);
+      digitalWrite(light4, HIGH);
+      delay(200);
+      digitalWrite(light1, LOW);
+      digitalWrite(light2, LOW);
+      digitalWrite(light3, LOW);
+      digitalWrite(light4, LOW);
+
+  }
+  error_repetition = error_repetition + 3 ;
+  delay(1000);
+}a:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Full Code"}],["$","$Lf",null,{"code":"$24"}]]}]
+b:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Attribution"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Original Simon Says project by Lawrence Liang, with Tawfiq Jawhar as collaborator."}]]}]
+c:["$","$L25",null,{"children":["$L26",["$","$L27",null,{"promise":"$@28"}]]}]
+d:["$","$1","h",{"children":[null,[["$","$L29",null,{"children":"$L2a"}],null],["$","$L2b",null,{"children":["$","div",null,{"hidden":true,"children":["$","$2c",null,{"fallback":null,"children":"$L2d"}]}]}]]}]
+10:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["As you can see inside the loop, we have two undefined functions: ",["$","code",null,{"children":"get_sequence()"}]," and"," ",["$","code",null,{"children":"set_sequence()"}],". We will start with the ",["$","code",null,{"children":"set_sequence()"}]," function."]}]
+11:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["In this function, we will be generating 4 random numbers, that correspond to the 4 lights available using"," ",["$","code",null,{"children":"randomSeed()"}]," and ",["$","code",null,{"children":"millis()"}],"."]}]
+12:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["The ",["$","code",null,{"children":"randomSeed()"}]," function comes from the Arduino board that initializes the pseudo-random number generator at a random point in time."]}]
+13:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["The ",["$","code",null,{"children":"millis()"}]," function, also a function from the Arduino board, returns the number of milliseconds passed since the board began running the current program."]}]
+14:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["Afterward, we will use a For Loop to generate 4 numbers with the ",["$","code",null,{"children":"random()"}]," function and store them inside the ",["$","code",null,{"children":"sequence"}]," attribute created earlier."]}]
+15:["$","$Lf",null,{"code":"void set_sequence()\n{\n  randomSeed(millis());\n\n  for (int i = 0; i < sequence_size; i++)\n  {\n    sequence[i] = random(2,6);\n  }\n}"}]
+16:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Once that is done, we will make sure that the lights are all off. Then, we will display the sequence using a for loop that runs through the ",["$","code",null,{"children":"sequence"}]," attribute."]}]
+17:["$","$Lf",null,{"code":"void set_sequence()\n{\n  randomSeed(millis());\n\n  for (int i = 0; i < sequence_size; i++)\n  {\n    sequence[i] = random(2,6);\n  }\n\n  digitalWrite(light1, LOW);\n  digitalWrite(light2, LOW);\n  digitalWrite(light3, LOW);\n  digitalWrite(light4, LOW);\n\n  for (int i = 0; i < sequence_size; i++)\n  {\n    digitalWrite(sequence[i], HIGH);\n    delay(1000);\n    digitalWrite(sequence[i], LOW);\n    delay(200);\n  }\n}"}]
+18:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["The next function that we will need to write is the ",["$","code",null,{"children":"get_sequence()"}]," function that allows the board to get the input sequence from a user."]}]
+19:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["This function will have a ",["$","code",null,{"children":"flag"}]," attribute, that by default will be set to ",["$","code",null,{"children":"0"}],", meaning the board is awaiting input from the player. Once a player has pressed on a switch, the ",["$","code",null,{"children":"flag"}]," will be set to ",["$","code",null,{"children":"1"}]," and whatever the user has input wouldn't be registered until the system has processed the verification."]}]
+1a:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["A For Loops is needed to get exactly the number of inputs indicated at the beginning under the"," ",["$","code",null,{"children":"sequence_size"}]," attribute."]}]
+1b:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["Inside the For Loop, we will put a While Loop. While the ",["$","code",null,{"children":"Flag"}]," is ",["$","code",null,{"children":"0"}],", it will be waiting for input from one of the four switches."]}]
+1c:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["There will be an If statement, that will check if one of the switches is pressed. If so, it will light up the corresponding LED, insert into the ",["$","code",null,{"children":"input_sequence"}]," the triggered switch, set the flag to 1, and check if the ",["$","code",null,{"children":"input_sequence[i]"}]," is not equal to the ",["$","code",null,{"children":"sequence[i]"}],"."]}]
+1d:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["If the sequence is ",["$","strong",null,{"children":"wrong"}],", it will run the ",["$","code",null,{"children":"wrong_sequence()"}]," function which is a sequence of lights to indicate that the sequence is wrong. It will also add 1 to the attribute"," ",["$","code",null,{"children":"errors"}]," and break the For Loop."]}]
+1e:["$","p",null,{"className":"mt-4 text-base font-semibold leading-relaxed","children":["If the sequence is ",["$","strong",null,{"children":"right"}],", it will continue the loop until it is done. Once all the sequences have been checked, it will run the ",["$","code",null,{"children":"right_sequence()"}]," function which is a sequence of lights to indicate that the sequence is right."]}]
+2e:T5be,void get_sequence()
+{
+  int flag = 0;
+
+  for (int i = 0; i < sequence_size; i++)
+  {
+    flag = 0;
+    while(flag == 0)
+    {
+      if (digitalRead(switch1) == LOW)
+      {
+        digitalWrite(light1, HIGH);
+        input_sequence[i] = 5;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light1, LOW);
+       }
+
+      if (digitalRead(switch2) == LOW)
+      {
+        digitalWrite(light2, HIGH);
+        input_sequence[i] = 4;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light2, LOW);
+       }
+
+      if (digitalRead(switch3) == LOW)
+      {
+        digitalWrite(light3, HIGH);
+        input_sequence[i] = 3;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light3, LOW);
+      }
+
+      if (digitalRead(switch4) == LOW)
+      {
+        digitalWrite(light4, HIGH);
+        input_sequence[i] = 2;
+        flag = 1;
+        delay(200);
+        if (input_sequence[i] != sequence[i])
+        {
+          wrong_sequence();
+          errors++;
+          return;
+        }
+        digitalWrite(light4, LOW);
+      }
+    }
+  }
+  right_sequence();
+}1f:["$","$Lf",null,{"code":"$2e"}]
+20:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Here is the ",["$","code",null,{"children":"wrong_sequence()"}]," function. In this function, we will be blinking the lights rapidly at 200 milliseconds intervals 3 times. And it adds 3 every time the user makes a mistake. In the end, it will blink 9 times, as the user can only have 3 mistakes."]}]
+21:["$","$Lf",null,{"code":"void wrong_sequence()\n{\n  for (int i = 0; i < error_repetition; i++)\n  {\n      digitalWrite(light1, LOW);\n      digitalWrite(light2, LOW);\n      digitalWrite(light3, LOW);\n      digitalWrite(light4, LOW);\n      delay(200);\n      digitalWrite(light1, HIGH);\n      digitalWrite(light2, HIGH);\n      digitalWrite(light3, HIGH);\n      digitalWrite(light4, HIGH);\n      delay(200);\n      digitalWrite(light1, LOW);\n      digitalWrite(light2, LOW);\n      digitalWrite(light3, LOW);\n      digitalWrite(light4, LOW);\n\n  }\n  error_repetition = error_repetition + 3 ;\n  delay(1000);\n}"}]
+22:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":["Here is the ",["$","code",null,{"children":"right_sequence()"}]," function. In this function, we will have the lights light up for half a second, and then off."]}]
+23:["$","$Lf",null,{"code":"void right_sequence()\n{\n\n    digitalWrite(light1, LOW);\n    digitalWrite(light2, LOW);\n    digitalWrite(light3, LOW);\n    digitalWrite(light4, LOW);\n    delay(500);\n\n    digitalWrite(light1, HIGH);\n    digitalWrite(light2, HIGH);\n    digitalWrite(light3, HIGH);\n    digitalWrite(light4, HIGH);\n  \n  delay(500);\n    digitalWrite(light1, LOW);\n    digitalWrite(light2, LOW);\n    digitalWrite(light3, LOW);\n    digitalWrite(light4, LOW);\n    delay(1000);\n}"}]
+2a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+26:null
+28:{"metadata":[["$","title","0",{"children":"Dawson makerSPACE Internships Hub"}],["$","meta","1",{"name":"description","content":"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."}]],"error":null,"digest":"$undefined"}
+2d:"$28:metadata"
