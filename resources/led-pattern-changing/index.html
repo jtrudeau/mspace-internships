@@ -1,0 +1,544 @@
+<!DOCTYPE html><!--E3eC1GE3HZ7fpR9l8lP4o--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/mspace-internships/images/LedPatternChanging/LedPatternChange.png"/><link rel="stylesheet" href="/mspace-internships/_next/static/css/d5262d962b1c9015.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/mspace-internships/_next/static/chunks/webpack-38f16982b82e94d6.js"/><script src="/mspace-internships/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/mspace-internships/_next/static/chunks/255-d0da834b259f9a83.js" async=""></script><script src="/mspace-internships/_next/static/chunks/main-app-27dfa06f966851dd.js" async=""></script><script src="/mspace-internships/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/mspace-internships/_next/static/chunks/app/resources/led-pattern-changing/page-ba809c30a1b57555.js" async=""></script><title>Dawson makerSPACE Internships Hub</title><meta name="description" content="Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."/><script src="/mspace-internships/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="min-h-screen antialiased"><div hidden=""><!--$--><!--/$--></div><div class="relative flex min-h-screen flex-col"><main class="flex-1"><main class="mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8"><section class="panel p-6 sm:p-8"><span class="tag">Resources · LED Making</span><h1 class="mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl">LED Pattern Changing</h1><p class="mt-4 max-w-3xl text-xl font-semibold leading-relaxed">A beginner button-and-LED project: press once to start, then each press cycles through seven different light patterns on six LEDs — pulled from the LED curriculum for a stable internship reference.</p><div class="mt-6 flex flex-wrap gap-3"><a class="btn btn-secondary" href="/mspace-internships/resources/">Back to Resources</a><a class="btn btn-primary" href="/mspace-internships/sessions/tracks/led/">Back to LED Track</a></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Overview</h2><div class="mt-6 grid gap-6 md:grid-cols-2"><div><h3 class="text-2xl font-black text-[var(--teal-deep)]">Prerequisites</h3><ul class="checklist mt-4 space-y-3 text-base font-semibold"><li>Arduino Uno</li><li>LEDs / Switch / Resistors</li><li>If-Else Statements</li><li>Programming Basics</li></ul></div><div><h3 class="text-2xl font-black text-[var(--teal-deep)]">List of components</h3><ul class="checklist mt-4 space-y-3 text-base font-semibold"><li>1× Arduino Uno</li><li>1× USB Cable</li><li>6× LED (any color)</li><li>5× 220Ω Resistor</li><li>1× 10kΩ Resistor</li><li>8× Input M-M wires (green recommended)</li><li>2× Red wire</li><li>6× Black wire</li></ul></div></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">How does it work?</h2><p class="mt-3 text-base font-semibold leading-relaxed">Press the button once to start pattern 1. Each subsequent press advances through seven patterns. After pattern 7, it resets to pattern 1.</p></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Set Up</h2><p class="mt-3 text-base font-semibold leading-relaxed">LEDs on pins 12, 11, 10, 7, 6, 5. Button on pin 3. Recreate the breadboard layout from the diagram.</p><div class="mt-6 panel track-card p-4"><img src="/mspace-internships/images/LedPatternChanging/LedPatternChange.png" alt="LED Pattern Changing breadboard wiring" class="h-auto w-full"/></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Coding</h2><p class="mt-3 text-base font-semibold leading-relaxed"><strong>Part 1 — Setup:</strong> pin constants (L1–L6, buttonPin), delay <code>de</code>, counter<!-- --> <code>p</code>, <code>buttonState</code>, and <code>void setup()</code> with all <code>pinMode</code> calls.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>/*
+ * LED Pattern Changing
+ * 
+ * Fun LED Pattern Changing project on 4 LEDS and 1 button.
+ * 
+ * The circuit:
+ * &gt; LEDS - DI #5, DI #6, DI #7, DI #10, DI #11, DI #12
+ * &gt; Switch - DI #3
+ * 
+ * Created 03/11/2022
+ * By Anh Nam
+*/
+
+// Led Inputs
+
+const int L1 = 12;
+const int L2 = 11;
+const int L3 = 10;
+const int L4 = 7;
+const int L5 = 6;
+const int L6 = 5;
+
+const int buttonPin = 3;  // Button input
+
+const int de=50;  // delay time
+
+const int p=0;    // variable for pattern
+
+const int buttonState = 0;    // variable for reading the pushbutton status
+
+void setup() {
+
+
+    pinMode(L1, OUTPUT);
+    pinMode(L2, OUTPUT);
+    pinMode(L3, OUTPUT);
+    pinMode(L4, OUTPUT);
+    pinMode(L5, OUTPUT);
+    pinMode(L6, OUTPUT);
+
+    pinMode(buttonPin, INPUT);
+
+}</code></pre></div><div class="mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4"><p class="text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]">Bug hunt for interns</p><div class="mt-2 text-base font-semibold leading-relaxed">The curriculum declares <code>p</code> and <code>buttonState</code> as <code>const int</code> but reassigns them in the loop — they should be plain <code>int</code>. Good exercise to spot and fix.</div></div><p class="mt-6 text-base font-semibold leading-relaxed"><strong>Part 2 — The loop:</strong> read the button, increment <code>p</code> on press, then branch into sequence functions 1–7.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>void loop() {
+    buttonState = digitalRead(buttonPin);
+    if (buttonState == HIGH)
+    {
+        p++;
+        delay(2000);
+    }
+
+    if (p == 1) {
+           first_sequence();
+    }
+    else if  (p == 2) {
+          second_sequence();
+    }
+     else if(p == 3) {
+          third_sequence();
+    }
+     else if(p == 4) {
+          fourth_sequence();
+    }
+     else if(p == 5) {
+          fifth_sequence();
+    }
+     else if(p == 6) {
+          sixth_sequence();
+    }
+     else if(p == 7) {
+          seventh_sequence();
+     }
+}</code></pre></div><p class="mt-6 text-base font-semibold leading-relaxed"><strong>Part 3 — The sequences:</strong> seven functions (<code>first_sequence</code> through<!-- --> <code>seventh_sequence</code>) using <code>digitalWrite</code>; <code>seventh_sequence</code> clears LEDs and resets <code>p</code> to 0.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code> void first_sequence() {
+        digitalWrite(L1, 1);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 1);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 1);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 1);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 1);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 1);
+        delay(de);
+    }
+
+    void second_sequence() {
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 1);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 1);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 1);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 1);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 1);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+
+        digitalWrite(L1, 1);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+    }
+    void third_sequence() {
+        digitalWrite(L1, 1);
+        delay(de);
+        digitalWrite(L2, 0);
+        delay(de);
+        digitalWrite(L3, 0);
+        delay(de);
+        digitalWrite(L4, 0);
+        delay(de);
+        digitalWrite(L5, 0);
+        delay(de);
+        digitalWrite(L6, 1);
+        delay(de);
+        digitalWrite(L6, 0);
+        delay(de);
+        digitalWrite(L5, 0);
+        delay(de);
+        digitalWrite(L4, 0);
+        delay(de);
+        digitalWrite(L3, 0);
+        delay(de);
+        digitalWrite(L2, 0);
+        delay(de);
+        digitalWrite(L1, 1);
+        delay(de);
+    }
+    void fourth_sequence() {
+        digitalWrite(L1, 1);
+        delay(de);
+        digitalWrite(L2, 0);
+        delay(de);
+        digitalWrite(L3, 1);
+        delay(de);
+        digitalWrite(L4, 0);
+        delay(de);
+        digitalWrite(L5, 1);
+        delay(de);
+        digitalWrite(L6, 0);
+        delay(de);
+        digitalWrite(L6, 0);
+        delay(de);
+        digitalWrite(L5, 1);
+        delay(de);
+        digitalWrite(L4, 0);
+        delay(de);
+        digitalWrite(L3, 1);
+        delay(de);
+        digitalWrite(L2, 0);
+        delay(de);
+        digitalWrite(L1, 1);
+        delay(de);
+    }
+    void fifth_sequence() {
+        digitalWrite(L1, 1);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 1);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        delay(de);
+    }
+    void sixth_sequence() {
+        digitalWrite(L1, 1);
+        delay(de);
+        digitalWrite(L2, 1);
+        delay(de);
+        digitalWrite(L3, 1);
+        delay(de);
+        digitalWrite(L4, 1);
+        delay(de);
+        digitalWrite(L5, 1);
+        delay(de);
+        digitalWrite(L6, 1);
+        delay(de);
+        digitalWrite(L6, 0);
+        delay(de);
+        digitalWrite(L5, 0);
+        delay(de);
+        digitalWrite(L4, 0);
+        delay(de);
+        digitalWrite(L3, 0);
+        delay(de);
+        digitalWrite(L2, 0);
+        delay(de);
+        digitalWrite(L1, 0);
+        delay(de);
+    }
+
+    void seventh_sequence() {
+        digitalWrite(L1, 0);
+        digitalWrite(L2, 0);
+        digitalWrite(L3, 0);
+        digitalWrite(L4, 0);
+        digitalWrite(L5, 0);
+        digitalWrite(L6, 0);
+        p = 0;
+    }</code></pre></div><div class="mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4"><p class="text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]">Extension</p><div class="mt-2 text-base font-semibold leading-relaxed">Try creating three new unique patterns of your own once the base project works.</div></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Full Code</h2><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>const int L1 = 12;
+const int L2 = 11;
+const int L3 = 10;
+const int L4 = 7;
+const int L5 = 6;
+const int L6 = 5;
+
+const int buttonPin = 3;  // Button input
+
+const int de=50;  // delay time
+
+const int p=0;    // variable for pattern
+
+const int buttonState = 0;   // variable for reading the pushbutton status
+
+void setup() {
+  pinMode(L1, OUTPUT);
+  pinMode(L2, OUTPUT);
+  pinMode(L3, OUTPUT);
+  pinMode(L4, OUTPUT);
+  pinMode(L5, OUTPUT);
+  pinMode(L6, OUTPUT);
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() 
+{
+ buttonState = digitalRead(buttonPin);
+
+ if (buttonState == HIGH)
+ 
+    {
+      p++;
+      delay(2000);
+    } 
+ 
+ if (p == 1) {
+           first_sequence();
+    }
+    else if  (p == 2) {
+          second_sequence();
+    }
+     else if(p == 3) {
+          third_sequence();
+    }
+     else if(p == 4) {
+          fourth_sequence();
+    }
+     else if(p == 5) {
+          fifth_sequence();
+    }
+     else if(p == 6) {
+          sixth_sequence();
+    }
+     else if(p == 7) {
+          seventh_sequence();
+     }
+}
+      void first_sequence(){
+ digitalWrite(L1,HIGH); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de);  
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,HIGH); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,HIGH); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,HIGH); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,HIGH); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,HIGH); 
+  delay(de);  
+  }
+  
+  void second_sequence()
+  {
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,HIGH); 
+  delay(de); 
+  
+  digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,HIGH); 
+ digitalWrite(L6,LOW); 
+  delay(de);
+  
+  digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,HIGH); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+  digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,HIGH); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de);  
+ 
+  digitalWrite(L1,LOW); 
+ digitalWrite(L2,HIGH); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de);  
+ 
+  digitalWrite(L1,HIGH); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  }
+  
+     void third_sequence()
+  {
+  digitalWrite(L1,HIGH); 
+ delay(de); 
+ digitalWrite(L2,LOW); 
+ delay(de); 
+ digitalWrite(L3,LOW);
+ delay(de);  
+ digitalWrite(L4,LOW);
+ delay(de);  
+ digitalWrite(L5,LOW);
+ delay(de);  
+ digitalWrite(L6,HIGH);
+ delay(de);   
+ digitalWrite(L6,LOW);
+ delay(de); 
+ digitalWrite(L5,LOW);
+ delay(de); 
+ digitalWrite(L4,LOW);
+ delay(de); 
+ digitalWrite(L3,LOW);
+ delay(de); 
+ digitalWrite(L2,LOW);
+ delay(de); 
+ digitalWrite(L1,HIGH);
+ delay(de); 
+  }
+  
+      void fourth_sequence()
+  {
+ digitalWrite(L1,HIGH); 
+ delay(de); 
+ digitalWrite(L2,LOW); 
+ delay(de); 
+ digitalWrite(L3,HIGH);
+ delay(de);  
+ digitalWrite(L4,LOW);
+ delay(de);  
+ digitalWrite(L5,HIGH);
+ delay(de);  
+ digitalWrite(L6,LOW);
+ delay(de);   
+ digitalWrite(L6,LOW);
+ delay(de); 
+ digitalWrite(L5,HIGH);
+ delay(de); 
+ digitalWrite(L4,LOW);
+ delay(de); 
+ digitalWrite(L3,HIGH);
+ delay(de); 
+ digitalWrite(L2,LOW);
+ delay(de); 
+ digitalWrite(L1,HIGH);
+ delay(de); 
+  }
+  
+  void fifth_sequence()  {
+ digitalWrite(L1,HIGH); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,HIGH); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  delay(de); 
+  }
+ 
+  void sixth_sequence()
+{
+ digitalWrite(L1,LOW); 
+ delay(de); 
+ digitalWrite(L2,LOW); 
+ delay(de); 
+ digitalWrite(L3,LOW);
+ delay(de);  
+ digitalWrite(L4,LOW);
+ delay(de);  
+ digitalWrite(L5,LOW);
+ delay(de);  
+ digitalWrite(L6,HIGH);
+ delay(de);   
+ digitalWrite(L6,LOW);
+ delay(de); 
+ digitalWrite(L5,LOW);
+ delay(de); 
+ digitalWrite(L4,LOW);
+ delay(de); 
+ digitalWrite(L3,LOW);
+ delay(de); 
+ digitalWrite(L2,LOW);
+ delay(de); 
+ digitalWrite(L1,LOW);
+ delay(de); 
+}  
+  void seventh_sequence(){
+ digitalWrite(L1,LOW); 
+ digitalWrite(L2,LOW); 
+ digitalWrite(L3,LOW); 
+ digitalWrite(L4,LOW); 
+ digitalWrite(L5,LOW); 
+ digitalWrite(L6,LOW); 
+  p=0;
+}</code></pre></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Attribution</h2><p class="mt-3 text-base font-semibold leading-relaxed">Original LED Pattern Changing project by Anh Nam.</p></section></main><!--$--><!--/$--></main><footer class="border-t-4 border-[var(--ink)] bg-transparent py-6"><div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8"><p class="font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]">Dawson makerSPACE Internships · DG-STEAM · CoLearn</p></div></footer></div><script src="/mspace-internships/_next/static/chunks/webpack-38f16982b82e94d6.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[9766,[],\"\"]\n3:I[8924,[],\"\"]\n4:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"379\",\"static/chunks/app/resources/led-pattern-changing/page-ba809c30a1b57555.js\"],\"\"]\nf:I[7150,[],\"\"]\n:HL[\"/mspace-internships/_next/static/css/d5262d962b1c9015.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"E3eC1GE3HZ7fpR9l8lP4o\",\"p\":\"/mspace-internships\",\"c\":[\"\",\"resources\",\"led-pattern-changing\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"resources\",{\"children\":[\"led-pattern-changing\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/mspace-internships/_next/static/css/d5262d962b1c9015.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"min-h-screen antialiased\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative flex min-h-screen flex-col\",\"children\":[[\"$\",\"main\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t-4 border-[var(--ink)] bg-transparent py-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8\",\"children\":[\"$\",\"p\",null,{\"className\":\"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]\",\"children\":\"Dawson makerSPACE Internships · DG-STEAM · CoLearn\"}]}]}]]}]}]}]]}],{\"children\":[\"resources\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"led-pattern-changing\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8\",\"children\":[[\"$\",\"section\",null,{\"className\":\"panel p-6 sm:p-8\",\"children\":[[\"$\",\"span\",null,{\"className\":\"tag\",\"children\":\"Resources · LED Making\"}],[\"$\",\"h1\",null,{\"className\":\"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl\",\"children\":\"LED Pattern Changing\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-3xl text-xl font-semibold leading-relaxed\",\"children\":\"A beginner button-and-LED project: press once to start, then each press cycles through seven different light patterns on six LEDs — pulled from the LED curriculum for a stable internship reference.\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 flex flex-wrap gap-3\",\"children\":[[\"$\",\"$L4\",null,{\"href\":\"/resources\",\"className\":\"btn btn-secondary\",\"children\":\"Back to Resources\"}],[\"$\",\"$L4\",null,{\"href\":\"/sessions/tracks/led\",\"className\":\"btn btn-primary\",\"children\":\"Back to LED Track\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Overview\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 grid gap-6 md:grid-cols-2\",\"children\":[[\"$\",\"div\",null,{\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-2xl font-black text-[var(--teal-deep)]\",\"children\":\"Prerequisites\"}],[\"$\",\"ul\",null,{\"className\":\"checklist mt-4 space-y-3 text-base font-semibold\",\"children\":[[\"$\",\"li\",null,{\"children\":\"Arduino Uno\"}],[\"$\",\"li\",null,{\"children\":\"LEDs / Switch / Resistors\"}],\"$L5\",\"$L6\"]}]]}],\"$L7\"]}]]}],\"$L8\",\"$L9\",\"$La\",\"$Lb\",\"$Lc\"]}],null,\"$Ld\"]}],{},null,false]},null,false]},null,false]},null,false],\"$Le\",false]],\"m\":\"$undefined\",\"G\":[\"$f\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"10:I[8874,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"379\",\"static/chunks/app/resources/led-pattern-changing/page-ba809c30a1b57555.js\"],\"default\"]\n14:I[4431,[],\"OutletBoundary\"]\n16:I[5278,[],\"AsyncMetadataOutlet\"]\n18:I[4431,[],\"ViewportBoundary\"]\n1a:I[4431,[],\"MetadataBoundary\"]\n1b:\"$Sreact.suspense\"\n5:[\"$\",\"li\",null,{\"children\":\"If-Else Statements\"}]\n6:[\"$\",\"li\",null,{\"children\":\"Programming Basics\"}]\n7:[\"$\",\"div\",null,{\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-2xl font-black text-[var(--teal-deep)]\",\"children\":\"List of components\"}],[\"$\",\"ul\",null,{\"className\":\"checklist mt-4 space-y-3 text-base font-semibold\",\"children\":[[\"$\",\"li\",null,{\"children\":\"1× Arduino Uno\"}],[\"$\",\"li\",null,{\"children\":\"1× USB Cable\"}],[\"$\",\"li\",null,{\"children\":\"6× LED (any color)\"}],[\"$\",\"li\",null,{\"children\":\"5× 220Ω Resistor\"}],[\"$\",\"li\",null,{\"children\":\"1× 10kΩ Resistor\"}],[\"$\",\"li\",null,{\"children\":\"8× Input M-M wires (green recommended)\"}],[\"$\",\"li\",null,{\"children\":\"2× Red wire\"}],[\"$\",\"li\",null,{\"children\":\"6× Black wire\"}]]}]]}]\n8:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"How does it work?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"Press the button once to start pattern 1. Each subsequent press advances through seven patterns. After pattern 7, it resets to pattern 1.\"}]]}]\n9:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Set Up\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"LEDs on pins 12, 11, 10, 7, 6, 5. Button on pin 3. Recreate the breadboard layout from the diagram.\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 panel track-card p-4\",\"children\":[\"$\",\"img\",null,{\"src\":\"/mspace-internships/images/LedPatternChanging/LedPatternChange.png\",\"alt\":\"LED Pattern Changing breadboard wiring\",\"className\":\"h-auto w-full\"}]}]]}]\n11"])</script><script>self.__next_f.push([1,":T1307,"])</script><script>self.__next_f.push([1," void first_sequence() {\n        digitalWrite(L1, 1);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 1);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 1);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 1);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 1);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 1);\n        delay(de);\n    }\n\n    void second_sequence() {\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 1);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 1);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 1);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 1);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 1);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n\n        digitalWrite(L1, 1);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n    }\n    void third_sequence() {\n        digitalWrite(L1, 1);\n        delay(de);\n        digitalWrite(L2, 0);\n        delay(de);\n        digitalWrite(L3, 0);\n        delay(de);\n        digitalWrite(L4, 0);\n        delay(de);\n        digitalWrite(L5, 0);\n        delay(de);\n        digitalWrite(L6, 1);\n        delay(de);\n        digitalWrite(L6, 0);\n        delay(de);\n        digitalWrite(L5, 0);\n        delay(de);\n        digitalWrite(L4, 0);\n        delay(de);\n        digitalWrite(L3, 0);\n        delay(de);\n        digitalWrite(L2, 0);\n        delay(de);\n        digitalWrite(L1, 1);\n        delay(de);\n    }\n    void fourth_sequence() {\n        digitalWrite(L1, 1);\n        delay(de);\n        digitalWrite(L2, 0);\n        delay(de);\n        digitalWrite(L3, 1);\n        delay(de);\n        digitalWrite(L4, 0);\n        delay(de);\n        digitalWrite(L5, 1);\n        delay(de);\n        digitalWrite(L6, 0);\n        delay(de);\n        digitalWrite(L6, 0);\n        delay(de);\n        digitalWrite(L5, 1);\n        delay(de);\n        digitalWrite(L4, 0);\n        delay(de);\n        digitalWrite(L3, 1);\n        delay(de);\n        digitalWrite(L2, 0);\n        delay(de);\n        digitalWrite(L1, 1);\n        delay(de);\n    }\n    void fifth_sequence() {\n        digitalWrite(L1, 1);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 1);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        delay(de);\n    }\n    void sixth_sequence() {\n        digitalWrite(L1, 1);\n        delay(de);\n        digitalWrite(L2, 1);\n        delay(de);\n        digitalWrite(L3, 1);\n        delay(de);\n        digitalWrite(L4, 1);\n        delay(de);\n        digitalWrite(L5, 1);\n        delay(de);\n        digitalWrite(L6, 1);\n        delay(de);\n        digitalWrite(L6, 0);\n        delay(de);\n        digitalWrite(L5, 0);\n        delay(de);\n        digitalWrite(L4, 0);\n        delay(de);\n        digitalWrite(L3, 0);\n        delay(de);\n        digitalWrite(L2, 0);\n        delay(de);\n        digitalWrite(L1, 0);\n        delay(de);\n    }\n\n    void seventh_sequence() {\n        digitalWrite(L1, 0);\n        digitalWrite(L2, 0);\n        digitalWrite(L3, 0);\n        digitalWrite(L4, 0);\n        digitalWrite(L5, 0);\n        digitalWrite(L6, 0);\n        p = 0;\n    }"])</script><script>self.__next_f.push([1,"a:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Coding\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Part 1 — Setup:\"}],\" pin constants (L1–L6, buttonPin), delay \",[\"$\",\"code\",null,{\"children\":\"de\"}],\", counter\",\" \",[\"$\",\"code\",null,{\"children\":\"p\"}],\", \",[\"$\",\"code\",null,{\"children\":\"buttonState\"}],\", and \",[\"$\",\"code\",null,{\"children\":\"void setup()\"}],\" with all \",[\"$\",\"code\",null,{\"children\":\"pinMode\"}],\" calls.\"]}],[\"$\",\"$L10\",null,{\"code\":\"/*\\n * LED Pattern Changing\\n * \\n * Fun LED Pattern Changing project on 4 LEDS and 1 button.\\n * \\n * The circuit:\\n * \u003e LEDS - DI #5, DI #6, DI #7, DI #10, DI #11, DI #12\\n * \u003e Switch - DI #3\\n * \\n * Created 03/11/2022\\n * By Anh Nam\\n*/\\n\\n// Led Inputs\\n\\nconst int L1 = 12;\\nconst int L2 = 11;\\nconst int L3 = 10;\\nconst int L4 = 7;\\nconst int L5 = 6;\\nconst int L6 = 5;\\n\\nconst int buttonPin = 3;  // Button input\\n\\nconst int de=50;  // delay time\\n\\nconst int p=0;    // variable for pattern\\n\\nconst int buttonState = 0;    // variable for reading the pushbutton status\\n\\nvoid setup() {\\n\\n\\n    pinMode(L1, OUTPUT);\\n    pinMode(L2, OUTPUT);\\n    pinMode(L3, OUTPUT);\\n    pinMode(L4, OUTPUT);\\n    pinMode(L5, OUTPUT);\\n    pinMode(L6, OUTPUT);\\n\\n    pinMode(buttonPin, INPUT);\\n\\n}\"}],[\"$\",\"div\",null,{\"className\":\"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]\",\"children\":\"Bug hunt for interns\"}],[\"$\",\"div\",null,{\"className\":\"mt-2 text-base font-semibold leading-relaxed\",\"children\":[\"The curriculum declares \",[\"$\",\"code\",null,{\"children\":\"p\"}],\" and \",[\"$\",\"code\",null,{\"children\":\"buttonState\"}],\" as \",[\"$\",\"code\",null,{\"children\":\"const int\"}],\" but reassigns them in the loop — they should be plain \",[\"$\",\"code\",null,{\"children\":\"int\"}],\". Good exercise to spot and fix.\"]}]]}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Part 2 — The loop:\"}],\" read the button, increment \",[\"$\",\"code\",null,{\"children\":\"p\"}],\" on press, then branch into sequence functions 1–7.\"]}],[\"$\",\"$L10\",null,{\"code\":\"void loop() {\\n    buttonState = digitalRead(buttonPin);\\n    if (buttonState == HIGH)\\n    {\\n        p++;\\n        delay(2000);\\n    }\\n\\n    if (p == 1) {\\n           first_sequence();\\n    }\\n    else if  (p == 2) {\\n          second_sequence();\\n    }\\n     else if(p == 3) {\\n          third_sequence();\\n    }\\n     else if(p == 4) {\\n          fourth_sequence();\\n    }\\n     else if(p == 5) {\\n          fifth_sequence();\\n    }\\n     else if(p == 6) {\\n          sixth_sequence();\\n    }\\n     else if(p == 7) {\\n          seventh_sequence();\\n     }\\n}\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Part 3 — The sequences:\"}],\" seven functions (\",[\"$\",\"code\",null,{\"children\":\"first_sequence\"}],\" through\",\" \",[\"$\",\"code\",null,{\"children\":\"seventh_sequence\"}],\") using \",[\"$\",\"code\",null,{\"children\":\"digitalWrite\"}],\"; \",[\"$\",\"code\",null,{\"children\":\"seventh_sequence\"}],\" clears LEDs and resets \",[\"$\",\"code\",null,{\"children\":\"p\"}],\" to 0.\"]}],[\"$\",\"$L10\",null,{\"code\":\"$11\"}],\"$L12\"]}]\n"])</script><script>self.__next_f.push([1,"13:T138d,"])</script><script>self.__next_f.push([1,"const int L1 = 12;\nconst int L2 = 11;\nconst int L3 = 10;\nconst int L4 = 7;\nconst int L5 = 6;\nconst int L6 = 5;\n\nconst int buttonPin = 3;  // Button input\n\nconst int de=50;  // delay time\n\nconst int p=0;    // variable for pattern\n\nconst int buttonState = 0;   // variable for reading the pushbutton status\n\nvoid setup() {\n  pinMode(L1, OUTPUT);\n  pinMode(L2, OUTPUT);\n  pinMode(L3, OUTPUT);\n  pinMode(L4, OUTPUT);\n  pinMode(L5, OUTPUT);\n  pinMode(L6, OUTPUT);\n  pinMode(buttonPin, INPUT);\n}\n\nvoid loop() \n{\n buttonState = digitalRead(buttonPin);\n\n if (buttonState == HIGH)\n \n    {\n      p++;\n      delay(2000);\n    } \n \n if (p == 1) {\n           first_sequence();\n    }\n    else if  (p == 2) {\n          second_sequence();\n    }\n     else if(p == 3) {\n          third_sequence();\n    }\n     else if(p == 4) {\n          fourth_sequence();\n    }\n     else if(p == 5) {\n          fifth_sequence();\n    }\n     else if(p == 6) {\n          sixth_sequence();\n    }\n     else if(p == 7) {\n          seventh_sequence();\n     }\n}\n      void first_sequence(){\n digitalWrite(L1,HIGH); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de);  \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,HIGH); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,HIGH); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,HIGH); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,HIGH); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,HIGH); \n  delay(de);  \n  }\n  \n  void second_sequence()\n  {\n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,HIGH); \n  delay(de); \n  \n  digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,HIGH); \n digitalWrite(L6,LOW); \n  delay(de);\n  \n  digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,HIGH); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n  digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,HIGH); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de);  \n \n  digitalWrite(L1,LOW); \n digitalWrite(L2,HIGH); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de);  \n \n  digitalWrite(L1,HIGH); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  }\n  \n     void third_sequence()\n  {\n  digitalWrite(L1,HIGH); \n delay(de); \n digitalWrite(L2,LOW); \n delay(de); \n digitalWrite(L3,LOW);\n delay(de);  \n digitalWrite(L4,LOW);\n delay(de);  \n digitalWrite(L5,LOW);\n delay(de);  \n digitalWrite(L6,HIGH);\n delay(de);   \n digitalWrite(L6,LOW);\n delay(de); \n digitalWrite(L5,LOW);\n delay(de); \n digitalWrite(L4,LOW);\n delay(de); \n digitalWrite(L3,LOW);\n delay(de); \n digitalWrite(L2,LOW);\n delay(de); \n digitalWrite(L1,HIGH);\n delay(de); \n  }\n  \n      void fourth_sequence()\n  {\n digitalWrite(L1,HIGH); \n delay(de); \n digitalWrite(L2,LOW); \n delay(de); \n digitalWrite(L3,HIGH);\n delay(de);  \n digitalWrite(L4,LOW);\n delay(de);  \n digitalWrite(L5,HIGH);\n delay(de);  \n digitalWrite(L6,LOW);\n delay(de);   \n digitalWrite(L6,LOW);\n delay(de); \n digitalWrite(L5,HIGH);\n delay(de); \n digitalWrite(L4,LOW);\n delay(de); \n digitalWrite(L3,HIGH);\n delay(de); \n digitalWrite(L2,LOW);\n delay(de); \n digitalWrite(L1,HIGH);\n delay(de); \n  }\n  \n  void fifth_sequence()  {\n digitalWrite(L1,HIGH); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  \n digitalWrite(L1,LOW); \n digitalWrite(L2,HIGH); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  delay(de); \n  }\n \n  void sixth_sequence()\n{\n digitalWrite(L1,LOW); \n delay(de); \n digitalWrite(L2,LOW); \n delay(de); \n digitalWrite(L3,LOW);\n delay(de);  \n digitalWrite(L4,LOW);\n delay(de);  \n digitalWrite(L5,LOW);\n delay(de);  \n digitalWrite(L6,HIGH);\n delay(de);   \n digitalWrite(L6,LOW);\n delay(de); \n digitalWrite(L5,LOW);\n delay(de); \n digitalWrite(L4,LOW);\n delay(de); \n digitalWrite(L3,LOW);\n delay(de); \n digitalWrite(L2,LOW);\n delay(de); \n digitalWrite(L1,LOW);\n delay(de); \n}  \n  void seventh_sequence(){\n digitalWrite(L1,LOW); \n digitalWrite(L2,LOW); \n digitalWrite(L3,LOW); \n digitalWrite(L4,LOW); \n digitalWrite(L5,LOW); \n digitalWrite(L6,LOW); \n  p=0;\n}"])</script><script>self.__next_f.push([1,"b:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Full Code\"}],[\"$\",\"$L10\",null,{\"code\":\"$13\"}]]}]\nc:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Attribution\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"Original LED Pattern Changing project by Anh Nam.\"}]]}]\nd:[\"$\",\"$L14\",null,{\"children\":[\"$L15\",[\"$\",\"$L16\",null,{\"promise\":\"$@17\"}]]}]\ne:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L18\",null,{\"children\":\"$L19\"}],null],[\"$\",\"$L1a\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$1b\",null,{\"fallback\":null,\"children\":\"$L1c\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"12:[\"$\",\"div\",null,{\"className\":\"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]\",\"children\":\"Extension\"}],[\"$\",\"div\",null,{\"className\":\"mt-2 text-base font-semibold leading-relaxed\",\"children\":\"Try creating three new unique patterns of your own once the base project works.\"}]]}]\n"])</script><script>self.__next_f.push([1,"19:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n15:null\n"])</script><script>self.__next_f.push([1,"17:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Dawson makerSPACE Internships Hub\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources.\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"1c:\"$17:metadata\"\n"])</script></body></html>

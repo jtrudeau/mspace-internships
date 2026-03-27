@@ -1,0 +1,200 @@
+<!DOCTYPE html><!--E3eC1GE3HZ7fpR9l8lP4o--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/mspace-internships/images/binary-counter/binary-counter_bb.png"/><link rel="stylesheet" href="/mspace-internships/_next/static/css/d5262d962b1c9015.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/mspace-internships/_next/static/chunks/webpack-38f16982b82e94d6.js"/><script src="/mspace-internships/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/mspace-internships/_next/static/chunks/255-d0da834b259f9a83.js" async=""></script><script src="/mspace-internships/_next/static/chunks/main-app-27dfa06f966851dd.js" async=""></script><script src="/mspace-internships/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/mspace-internships/_next/static/chunks/app/resources/binary-counter/page-ba809c30a1b57555.js" async=""></script><title>Dawson makerSPACE Internships Hub</title><meta name="description" content="Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."/><script src="/mspace-internships/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="min-h-screen antialiased"><div hidden=""><!--$--><!--/$--></div><div class="relative flex min-h-screen flex-col"><main class="flex-1"><main class="mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8"><section class="panel p-6 sm:p-8"><span class="tag">Resources · LED Making</span><h1 class="mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl">Binary Counter</h1><p class="mt-4 max-w-3xl text-xl font-semibold leading-relaxed">Count from 0 to 256 in binary using a NeoPixel LED stick and two buttons — a visual introduction to binary representation and the FastLED library.</p><div class="mt-6 flex flex-wrap gap-3"><a class="btn btn-secondary" href="/mspace-internships/resources/">Back to Resources</a><a class="btn btn-primary" href="/mspace-internships/sessions/tracks/led/">Back to LED Track</a></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Overview</h2><div class="mt-6 grid gap-6 md:grid-cols-2"><div><h3 class="text-2xl font-black text-[var(--teal-deep)]">Prerequisites</h3><ul class="checklist mt-4 space-y-3 text-base font-semibold"><li>Arduino UNO</li><li>Programming Basics</li><li>LEDs / Switches / If Statements</li></ul></div><div><h3 class="text-2xl font-black text-[var(--teal-deep)]">List of components</h3><ul class="checklist mt-4 space-y-3 text-base font-semibold"><li>P4Uno Board</li><li>8 M-M wires</li><li>1× NeoPixel Stick (8 LEDs)</li><li>2× Push Buttons</li><li>Breadboard</li></ul></div></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">How does it work?</h2><p class="mt-3 text-base font-semibold leading-relaxed">The + button increments the count and the − button decrements it. After each change, the LED stick shows the current value in binary: red for 1, blue for 0, from 0 to 256.</p></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Set Up</h2><p class="mt-3 text-base font-semibold leading-relaxed">Button + → DI #2, Button − → DI #3, NeoPixel DI → DI #5, NeoPixel 4-7VDC → 5V, NeoPixel GND → GND rail. Check pin labels on the back of the stick.</p><div class="mt-6 panel track-card p-4"><img src="/mspace-internships/images/binary-counter/binary-counter_bb.png" alt="Binary counter breadboard wiring" class="h-auto w-full"/></div><div class="mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4"><p class="text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]">Pull-up buttons</p><div class="mt-2 text-base font-semibold leading-relaxed">With <code>INPUT_PULLUP</code>, a pressed button reads <code>LOW</code> (0) because it connects to ground. Unpressed reads <code>HIGH</code>.</div></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Coding</h2><p class="mt-3 text-base font-semibold leading-relaxed"><strong>Step 1 —</strong> Include FastLED, set <code>NUM_LEDS</code>, button pins, <code>DATA_PIN</code>, red / blue colors, and the <code>leds</code> array. Initialize <code>count</code> to 0.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>// Imports
+#include &quot;FastLED.h&quot;
+
+// Stick Size
+#define NUM_LEDS 8
+
+// Pin Setup
+#define BTN_INC 2
+#define BTN_DEC 3
+#define DATA_PIN 5
+
+// Define the color and array of leds
+CRGB red(20, 0, 0);     // Represents the digit 1
+CRGB blue(0, 0, 20);    // Represents the digit 0
+CRGB leds[NUM_LEDS];
+int count = 0;</code></pre></div><p class="mt-6 text-base font-semibold leading-relaxed"><strong>Step 2 —</strong> In <code>setup()</code>, call <code>FastLED.addLeds</code> and set both buttons to<!-- --> <code>INPUT_PULLUP</code>.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>void setup() {
+  FastLED.addLeds&lt;NEOPIXEL, DATA_PIN&gt;(leds, NUM_LEDS);
+  pinMode(BTN_INC, INPUT_PULLUP);
+  pinMode(BTN_DEC, INPUT_PULLUP);
+}</code></pre></div><p class="mt-6 text-base font-semibold leading-relaxed"><strong>Step 3 —</strong> First version of <code>loop()</code>: read buttons, update <code>count</code> within bounds, with debounce-style delays.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>void loop() {
+  // Check Increment
+  if(digitalRead(BTN_INC) == 0) {
+    if(count &lt;= 256) {
+      count++;
+      delay(500);
+    }
+  }
+
+  // Check Decrement
+  if(digitalRead(BTN_DEC) == 0) {
+    if(count &gt; 0) {
+      count--;
+      delay(500);
+    }
+  }
+
+  delay(100);
+}</code></pre></div><p class="mt-6 text-base font-semibold leading-relaxed">The curriculum explains the modulo algorithm: each LED is one binary digit. Compare the number&#x27;s modulo result to know whether that bit should be 1 or 0.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>void displayNumber(int num) {
+  if(num % 2 &gt; 0)
+    leds[0] = red;
+  else
+    leds[0] = blue;
+
+  if(num % 4 &gt; 1)
+    leds[1] = red;
+  else
+    leds[1] = blue;
+
+  if(num % 8 &gt; 3)
+    leds[2] = red;
+  else
+    leds[2] = blue;
+
+  if(num % 16 &gt; 7)
+    leds[3] = red;
+  else
+    leds[3] = blue;
+
+  if(num % 32 &gt; 15)
+    leds[4] = red;
+  else
+    leds[4] = blue;
+
+  if(num % 64 &gt; 31)
+    leds[5] = red;
+  else
+    leds[5] = blue;
+
+  if(num % 128 &gt; 63)
+    leds[6] = red;
+  else
+    leds[6] = blue;
+
+  if(num % 256 &gt; 127)
+    leds[7] = red;
+  else
+    leds[7] = blue;
+}</code></pre></div><p class="mt-6 text-base font-semibold leading-relaxed"><strong>Step 4 —</strong> Final <code>loop()</code>: after handling buttons, call <code>displayNumber(count)</code> <!-- -->and <code>FastLED.show()</code> so the stick updates.</p><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>void loop() {
+  // Check Increment
+  if(digitalRead(BTN_INC) == 0) {
+    if(count &lt;= 256) {
+      count++;
+      delay(500);
+    }
+  }
+
+  // Check Decrement
+  if(digitalRead(BTN_DEC) == 0) {
+    if(count &gt; 0) {
+      count--;
+      delay(500);
+    }
+  }
+
+  displayNumber(count);
+  FastLED.show();
+
+  delay(100);
+}</code></pre></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Full Code</h2><div class="code-block mt-4 border-2 border-[var(--ink)] bg-[#fffdf7]"><div class="flex items-center justify-end border-b-2 border-[var(--ink)] bg-[var(--sand)] px-3 py-2"><button type="button" class="btn btn-secondary px-3 py-2 text-[0.68rem]" aria-live="polite">Copy code</button></div><pre class="overflow-x-auto p-4 text-sm leading-6 text-[var(--ink)]"><code>/*
+ * Binary Counter
+ *
+ * Counting in binary using an LED Stick &amp; 2 Buttons
+ *
+ * The circuit:
+ * &gt; NeoPixel LED Stick - DI #5
+ * &gt; 2 Switches - DI #2 &amp; #3
+ *
+ * Created 23/03/2022
+ * By Wael Osman
+ *
+ * Modified 25/03/2022
+ * By Wael Osman
+*/
+// Imports
+#include &quot;FastLED.h&quot;
+
+// Stick Size
+#define NUM_LEDS 8
+
+// Pin Setup
+#define BTN_INC 2
+#define BTN_DEC 3
+#define DATA_PIN 5
+
+// Define the color and array of leds
+CRGB red(20, 0, 0);     // Represents the digit 1
+CRGB blue(0, 0, 20);    // Represents the digit 0
+CRGB leds[NUM_LEDS];
+int count = 0;
+
+void setup() {
+  FastLED.addLeds&lt;NEOPIXEL, DATA_PIN&gt;(leds, NUM_LEDS);
+  pinMode(BTN_INC, INPUT_PULLUP);
+  pinMode(BTN_DEC, INPUT_PULLUP);
+}
+
+void loop() {
+  // Check Increment
+  if(digitalRead(BTN_INC) == 0) {
+    if(count &lt;= 256) {
+      count++;
+      delay(500);
+    }
+  }
+
+  // Check Decrement
+  if(digitalRead(BTN_DEC) == 0) {
+    if(count &gt; 0) {
+      count--;
+      delay(500);
+    }
+  }
+
+  displayNumber(count);
+  FastLED.show();
+
+  delay(100);
+}
+
+void displayNumber(int num) {
+  if(num % 2 &gt; 0)
+    leds[0] = red;
+  else
+    leds[0] = blue;
+
+  if(num % 4 &gt; 1)
+    leds[1] = red;
+  else
+    leds[1] = blue;
+
+  if(num % 8 &gt; 3)
+    leds[2] = red;
+  else
+    leds[2] = blue;
+
+  if(num % 16 &gt; 7)
+    leds[3] = red;
+  else
+    leds[3] = blue;
+
+  if(num % 32 &gt; 15)
+    leds[4] = red;
+  else
+    leds[4] = blue;
+
+  if(num % 64 &gt; 31)
+    leds[5] = red;
+  else
+    leds[5] = blue;
+
+  if(num % 128 &gt; 63)
+    leds[6] = red;
+  else
+    leds[6] = blue;
+
+  if(num % 256 &gt; 127)
+    leds[7] = red;
+  else
+    leds[7] = blue;
+}</code></pre></div></section><section class="mt-8 panel p-6"><h2 class="font-display text-3xl text-[var(--teal-deep)]">Attribution</h2><p class="mt-3 text-base font-semibold leading-relaxed">Original Binary Counter project by Wael Osman.</p></section></main><!--$--><!--/$--></main><footer class="border-t-4 border-[var(--ink)] bg-transparent py-6"><div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8"><p class="font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]">Dawson makerSPACE Internships · DG-STEAM · CoLearn</p></div></footer></div><script src="/mspace-internships/_next/static/chunks/webpack-38f16982b82e94d6.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[9766,[],\"\"]\n3:I[8924,[],\"\"]\n4:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"625\",\"static/chunks/app/resources/binary-counter/page-ba809c30a1b57555.js\"],\"\"]\ne:I[7150,[],\"\"]\n:HL[\"/mspace-internships/_next/static/css/d5262d962b1c9015.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"E3eC1GE3HZ7fpR9l8lP4o\",\"p\":\"/mspace-internships\",\"c\":[\"\",\"resources\",\"binary-counter\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"resources\",{\"children\":[\"binary-counter\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/mspace-internships/_next/static/css/d5262d962b1c9015.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"min-h-screen antialiased\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative flex min-h-screen flex-col\",\"children\":[[\"$\",\"main\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t-4 border-[var(--ink)] bg-transparent py-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8\",\"children\":[\"$\",\"p\",null,{\"className\":\"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]\",\"children\":\"Dawson makerSPACE Internships · DG-STEAM · CoLearn\"}]}]}]]}]}]}]]}],{\"children\":[\"resources\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"binary-counter\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8\",\"children\":[[\"$\",\"section\",null,{\"className\":\"panel p-6 sm:p-8\",\"children\":[[\"$\",\"span\",null,{\"className\":\"tag\",\"children\":\"Resources · LED Making\"}],[\"$\",\"h1\",null,{\"className\":\"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl\",\"children\":\"Binary Counter\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 max-w-3xl text-xl font-semibold leading-relaxed\",\"children\":\"Count from 0 to 256 in binary using a NeoPixel LED stick and two buttons — a visual introduction to binary representation and the FastLED library.\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 flex flex-wrap gap-3\",\"children\":[[\"$\",\"$L4\",null,{\"href\":\"/resources\",\"className\":\"btn btn-secondary\",\"children\":\"Back to Resources\"}],[\"$\",\"$L4\",null,{\"href\":\"/sessions/tracks/led\",\"className\":\"btn btn-primary\",\"children\":\"Back to LED Track\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Overview\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 grid gap-6 md:grid-cols-2\",\"children\":[[\"$\",\"div\",null,{\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-2xl font-black text-[var(--teal-deep)]\",\"children\":\"Prerequisites\"}],[\"$\",\"ul\",null,{\"className\":\"checklist mt-4 space-y-3 text-base font-semibold\",\"children\":[[\"$\",\"li\",null,{\"children\":\"Arduino UNO\"}],[\"$\",\"li\",null,{\"children\":\"Programming Basics\"}],[\"$\",\"li\",null,{\"children\":\"LEDs / Switches / If Statements\"}]]}]]}],[\"$\",\"div\",null,{\"children\":[\"$L5\",\"$L6\"]}]]}]]}],\"$L7\",\"$L8\",\"$L9\",\"$La\",\"$Lb\"]}],null,\"$Lc\"]}],{},null,false]},null,false]},null,false]},null,false],\"$Ld\",false]],\"m\":\"$undefined\",\"G\":[\"$e\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"f:I[8874,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"625\",\"static/chunks/app/resources/binary-counter/page-ba809c30a1b57555.js\"],\"default\"]\n11:I[4431,[],\"OutletBoundary\"]\n13:I[5278,[],\"AsyncMetadataOutlet\"]\n15:I[4431,[],\"ViewportBoundary\"]\n17:I[4431,[],\"MetadataBoundary\"]\n18:\"$Sreact.suspense\"\n5:[\"$\",\"h3\",null,{\"className\":\"text-2xl font-black text-[var(--teal-deep)]\",\"children\":\"List of components\"}]\n6:[\"$\",\"ul\",null,{\"className\":\"checklist mt-4 space-y-3 text-base font-semibold\",\"children\":[[\"$\",\"li\",null,{\"children\":\"P4Uno Board\"}],[\"$\",\"li\",null,{\"children\":\"8 M-M wires\"}],[\"$\",\"li\",null,{\"children\":\"1× NeoPixel Stick (8 LEDs)\"}],[\"$\",\"li\",null,{\"children\":\"2× Push Buttons\"}],[\"$\",\"li\",null,{\"children\":\"Breadboard\"}]]}]\n7:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"How does it work?\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"The + button increments the count and the − button decrements it. After each change, the LED stick shows the current value in binary: red for 1, blue for 0, from 0 to 256.\"}]]}]\n"])</script><script>self.__next_f.push([1,"8:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Set Up\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"Button + → DI #2, Button − → DI #3, NeoPixel DI → DI #5, NeoPixel 4-7VDC → 5V, NeoPixel GND → GND rail. Check pin labels on the back of the stick.\"}],[\"$\",\"div\",null,{\"className\":\"mt-6 panel track-card p-4\",\"children\":[\"$\",\"img\",null,{\"src\":\"/mspace-internships/images/binary-counter/binary-counter_bb.png\",\"alt\":\"Binary counter breadboard wiring\",\"className\":\"h-auto w-full\"}]}],[\"$\",\"div\",null,{\"className\":\"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]\",\"children\":\"Pull-up buttons\"}],[\"$\",\"div\",null,{\"className\":\"mt-2 text-base font-semibold leading-relaxed\",\"children\":[\"With \",[\"$\",\"code\",null,{\"children\":\"INPUT_PULLUP\"}],\", a pressed button reads \",[\"$\",\"code\",null,{\"children\":\"LOW\"}],\" (0) because it connects to ground. Unpressed reads \",[\"$\",\"code\",null,{\"children\":\"HIGH\"}],\".\"]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"9:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Coding\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Step 1 —\"}],\" Include FastLED, set \",[\"$\",\"code\",null,{\"children\":\"NUM_LEDS\"}],\", button pins, \",[\"$\",\"code\",null,{\"children\":\"DATA_PIN\"}],\", red / blue colors, and the \",[\"$\",\"code\",null,{\"children\":\"leds\"}],\" array. Initialize \",[\"$\",\"code\",null,{\"children\":\"count\"}],\" to 0.\"]}],[\"$\",\"$Lf\",null,{\"code\":\"// Imports\\n#include \\\"FastLED.h\\\"\\n\\n// Stick Size\\n#define NUM_LEDS 8\\n\\n// Pin Setup\\n#define BTN_INC 2\\n#define BTN_DEC 3\\n#define DATA_PIN 5\\n\\n// Define the color and array of leds\\nCRGB red(20, 0, 0);     // Represents the digit 1\\nCRGB blue(0, 0, 20);    // Represents the digit 0\\nCRGB leds[NUM_LEDS];\\nint count = 0;\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Step 2 —\"}],\" In \",[\"$\",\"code\",null,{\"children\":\"setup()\"}],\", call \",[\"$\",\"code\",null,{\"children\":\"FastLED.addLeds\"}],\" and set both buttons to\",\" \",[\"$\",\"code\",null,{\"children\":\"INPUT_PULLUP\"}],\".\"]}],[\"$\",\"$Lf\",null,{\"code\":\"void setup() {\\n  FastLED.addLeds\u003cNEOPIXEL, DATA_PIN\u003e(leds, NUM_LEDS);\\n  pinMode(BTN_INC, INPUT_PULLUP);\\n  pinMode(BTN_DEC, INPUT_PULLUP);\\n}\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Step 3 —\"}],\" First version of \",[\"$\",\"code\",null,{\"children\":\"loop()\"}],\": read buttons, update \",[\"$\",\"code\",null,{\"children\":\"count\"}],\" within bounds, with debounce-style delays.\"]}],[\"$\",\"$Lf\",null,{\"code\":\"void loop() {\\n  // Check Increment\\n  if(digitalRead(BTN_INC) == 0) {\\n    if(count \u003c= 256) {\\n      count++;\\n      delay(500);\\n    }\\n  }\\n\\n  // Check Decrement\\n  if(digitalRead(BTN_DEC) == 0) {\\n    if(count \u003e 0) {\\n      count--;\\n      delay(500);\\n    }\\n  }\\n\\n  delay(100);\\n}\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":\"The curriculum explains the modulo algorithm: each LED is one binary digit. Compare the number's modulo result to know whether that bit should be 1 or 0.\"}],[\"$\",\"$Lf\",null,{\"code\":\"void displayNumber(int num) {\\n  if(num % 2 \u003e 0)\\n    leds[0] = red;\\n  else\\n    leds[0] = blue;\\n\\n  if(num % 4 \u003e 1)\\n    leds[1] = red;\\n  else\\n    leds[1] = blue;\\n\\n  if(num % 8 \u003e 3)\\n    leds[2] = red;\\n  else\\n    leds[2] = blue;\\n\\n  if(num % 16 \u003e 7)\\n    leds[3] = red;\\n  else\\n    leds[3] = blue;\\n\\n  if(num % 32 \u003e 15)\\n    leds[4] = red;\\n  else\\n    leds[4] = blue;\\n\\n  if(num % 64 \u003e 31)\\n    leds[5] = red;\\n  else\\n    leds[5] = blue;\\n\\n  if(num % 128 \u003e 63)\\n    leds[6] = red;\\n  else\\n    leds[6] = blue;\\n\\n  if(num % 256 \u003e 127)\\n    leds[7] = red;\\n  else\\n    leds[7] = blue;\\n}\"}],[\"$\",\"p\",null,{\"className\":\"mt-6 text-base font-semibold leading-relaxed\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Step 4 —\"}],\" Final \",[\"$\",\"code\",null,{\"children\":\"loop()\"}],\": after handling buttons, call \",[\"$\",\"code\",null,{\"children\":\"displayNumber(count)\"}],\" \",\"and \",[\"$\",\"code\",null,{\"children\":\"FastLED.show()\"}],\" so the stick updates.\"]}],[\"$\",\"$Lf\",null,{\"code\":\"void loop() {\\n  // Check Increment\\n  if(digitalRead(BTN_INC) == 0) {\\n    if(count \u003c= 256) {\\n      count++;\\n      delay(500);\\n    }\\n  }\\n\\n  // Check Decrement\\n  if(digitalRead(BTN_DEC) == 0) {\\n    if(count \u003e 0) {\\n      count--;\\n      delay(500);\\n    }\\n  }\\n\\n  displayNumber(count);\\n  FastLED.show();\\n\\n  delay(100);\\n}\"}]]}]\n"])</script><script>self.__next_f.push([1,"10:T626,"])</script><script>self.__next_f.push([1,"/*\n * Binary Counter\n *\n * Counting in binary using an LED Stick \u0026 2 Buttons\n *\n * The circuit:\n * \u003e NeoPixel LED Stick - DI #5\n * \u003e 2 Switches - DI #2 \u0026 #3\n *\n * Created 23/03/2022\n * By Wael Osman\n *\n * Modified 25/03/2022\n * By Wael Osman\n*/\n// Imports\n#include \"FastLED.h\"\n\n// Stick Size\n#define NUM_LEDS 8\n\n// Pin Setup\n#define BTN_INC 2\n#define BTN_DEC 3\n#define DATA_PIN 5\n\n// Define the color and array of leds\nCRGB red(20, 0, 0);     // Represents the digit 1\nCRGB blue(0, 0, 20);    // Represents the digit 0\nCRGB leds[NUM_LEDS];\nint count = 0;\n\nvoid setup() {\n  FastLED.addLeds\u003cNEOPIXEL, DATA_PIN\u003e(leds, NUM_LEDS);\n  pinMode(BTN_INC, INPUT_PULLUP);\n  pinMode(BTN_DEC, INPUT_PULLUP);\n}\n\nvoid loop() {\n  // Check Increment\n  if(digitalRead(BTN_INC) == 0) {\n    if(count \u003c= 256) {\n      count++;\n      delay(500);\n    }\n  }\n\n  // Check Decrement\n  if(digitalRead(BTN_DEC) == 0) {\n    if(count \u003e 0) {\n      count--;\n      delay(500);\n    }\n  }\n\n  displayNumber(count);\n  FastLED.show();\n\n  delay(100);\n}\n\nvoid displayNumber(int num) {\n  if(num % 2 \u003e 0)\n    leds[0] = red;\n  else\n    leds[0] = blue;\n\n  if(num % 4 \u003e 1)\n    leds[1] = red;\n  else\n    leds[1] = blue;\n\n  if(num % 8 \u003e 3)\n    leds[2] = red;\n  else\n    leds[2] = blue;\n\n  if(num % 16 \u003e 7)\n    leds[3] = red;\n  else\n    leds[3] = blue;\n\n  if(num % 32 \u003e 15)\n    leds[4] = red;\n  else\n    leds[4] = blue;\n\n  if(num % 64 \u003e 31)\n    leds[5] = red;\n  else\n    leds[5] = blue;\n\n  if(num % 128 \u003e 63)\n    leds[6] = red;\n  else\n    leds[6] = blue;\n\n  if(num % 256 \u003e 127)\n    leds[7] = red;\n  else\n    leds[7] = blue;\n}"])</script><script>self.__next_f.push([1,"a:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Full Code\"}],[\"$\",\"$Lf\",null,{\"code\":\"$10\"}]]}]\nb:[\"$\",\"section\",null,{\"className\":\"mt-8 panel p-6\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"font-display text-3xl text-[var(--teal-deep)]\",\"children\":\"Attribution\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-base font-semibold leading-relaxed\",\"children\":\"Original Binary Counter project by Wael Osman.\"}]]}]\nc:[\"$\",\"$L11\",null,{\"children\":[\"$L12\",[\"$\",\"$L13\",null,{\"promise\":\"$@14\"}]]}]\nd:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L15\",null,{\"children\":\"$L16\"}],null],[\"$\",\"$L17\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$18\",null,{\"fallback\":null,\"children\":\"$L19\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"16:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n12:null\n"])</script><script>self.__next_f.push([1,"14:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Dawson makerSPACE Internships Hub\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources.\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"19:\"$14:metadata\"\n"])</script></body></html>

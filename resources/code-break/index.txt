@@ -1,0 +1,186 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","746","static/chunks/app/resources/code-break/page-ba809c30a1b57555.js"],""]
+d:I[7150,[],""]
+:HL["/mspace-internships/_next/static/css/d5262d962b1c9015.css","style"]
+0:{"P":null,"b":"E3eC1GE3HZ7fpR9l8lP4o","p":"/mspace-internships","c":["","resources","code-break",""],"i":false,"f":[[["",{"children":["resources",{"children":["code-break",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mspace-internships/_next/static/css/d5262d962b1c9015.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen antialiased","children":["$","div",null,{"className":"relative flex min-h-screen flex-col","children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t-4 border-[var(--ink)] bg-transparent py-6","children":["$","div",null,{"className":"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8","children":["$","p",null,{"className":"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]","children":"Dawson makerSPACE Internships · DG-STEAM · CoLearn"}]}]}]]}]}]}]]}],{"children":["resources",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["code-break",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8","children":[["$","section",null,{"className":"panel p-6 sm:p-8","children":[["$","span",null,{"className":"tag","children":"Resources · LED Making"}],["$","h1",null,{"className":"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl","children":"Code Break"}],["$","p",null,{"className":"mt-4 max-w-3xl text-xl font-semibold leading-relaxed","children":"Mastermind-style guessing on an 8×8 matrix: four color buttons, four attempts, green/red feedback columns, happy or sad face at the end."}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-3","children":[["$","$L4",null,{"href":"/resources","className":"btn btn-secondary","children":"Back to Resources"}],["$","$L4",null,{"href":"/sessions/tracks/led","className":"btn btn-primary","children":"Back to LED Track"}]]}]]}],["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Overview"}],["$","div",null,{"className":"mt-6 grid gap-6 md:grid-cols-2","children":[["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"Prerequisites"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino UNO"}],["$","li",null,{"children":"Programming Basics"}],["$","li",null,{"children":"If-Else / Switch Statements"}],["$","li",null,{"children":"Switches"}],["$","li",null,{"children":"WS2812 8×8 Matrix Basics"}]]}]]}],"$L5"]}]]}],"$L6","$L7","$L8","$L9","$La"]}],null,"$Lb"]}],{},null,false]},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",[]],"s":false,"S":true}
+e:I[8874,["619","static/chunks/619-ba102abea3e3d0e4.js","746","static/chunks/app/resources/code-break/page-ba809c30a1b57555.js"],"default"]
+12:I[4431,[],"OutletBoundary"]
+14:I[5278,[],"AsyncMetadataOutlet"]
+16:I[4431,[],"ViewportBoundary"]
+18:I[4431,[],"MetadataBoundary"]
+19:"$Sreact.suspense"
+5:["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"List of components"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"P4Uno Board"}],["$","li",null,{"children":"12 M-M wires"}],["$","li",null,{"children":"4 Switches (colored caps)"}],["$","li",null,{"children":"1× WS2812 8×8 Matrix"}],["$","li",null,{"children":"Breadboard"}]]}]]}]
+6:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"How does it work?"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":["The Arduino picks a secret four-color code. Each guess fills the left columns; feedback uses the right columns (green = correct color and position, red = wrong). ",["$","code",null,{"children":"attempt"}]," advances by ",["$","strong",null,{"children":"2"}]," rows per turn so each guess uses two matrix rows (guess row + feedback row). Four attempts; win shows a green smile, loss a red frown."]}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"Prerequisites on the hub"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":"If this feels dense, work through Binary Counter and LED Dice first — same FastLED + matrix ideas in smaller steps."}]]}]]}]
+7:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Set Up"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"BTN_RED=2, BTN_GREEN=3, BTN_BLUE=4, BTN_WHITE=5. Matrix DIN → DI #7, 5V and GND as labeled on the board."}],["$","div",null,{"className":"mt-6 panel track-card p-4","children":["$","img",null,{"src":"/mspace-internships/images/code-break/code-break_bb.png","alt":"Code Break breadboard wiring","className":"h-auto w-full"}]}]]}]
+8:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Coding"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 1 —"}]," FastLED import, pins, matrix size, colors, game state arrays."]}],["$","$Le",null,{"code":"// Imports\n#include <FastLED.h>\n\n// Pin Setup & Matrix Size\nconst int DATA_PIN = 7;\nconst int BTN_RED = 2;\nconst int BTN_GREEN = 3;\nconst int BTN_BLUE = 4;\nconst int BTN_WHITE = 5;\n\nconst int NUM_ROWS = 8;\nconst int NUM_COLS = 8;\nconst int NUM_LEDS = NUM_ROWS * NUM_COLS;\n\n// Color & Array of LEDs\nCRGB red(50, 0, 0);\nCRGB green(0, 50, 0);\nCRGB blue(0, 0, 50);\nCRGB white(50, 50, 50);\n\nCRGB leds[NUM_LEDS];\n\n// Game Setup\nbool gameActive;\nbool guessLogged;\nint code[4];\nint guess[4];\nint attempt;"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 2 —"}]," ",["$","code",null,{"children":"setup()"}],": init LEDs, ",["$","code",null,{"children":"INPUT_PULLUP"}]," on buttons, default flags."]}],["$","$Le",null,{"code":"void setup() {\n  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);\n  pinMode(BTN_RED, INPUT_PULLUP);\n  pinMode(BTN_GREEN, INPUT_PULLUP);\n  pinMode(BTN_BLUE, INPUT_PULLUP);\n  pinMode(BTN_WHITE, INPUT_PULLUP);\n  \n  gameActive = false;\n  guessLogged = false;\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 3 —"}]," ",["$","code",null,{"children":"loop()"}],": start game, ",["$","code",null,{"children":"registerGuess"}]," loop, ",["$","code",null,{"children":"solveCode"}],", ",["$","code",null,{"children":"attempt += 2"}],"."]}],["$","$Le",null,{"code":"void loop() {\n  // Start a new game\n  if(!gameActive) {\n    generateCode();\n    gameActive = true;\n    attempt = 0;\n    FastLED.clear();\n  }\n  \n  // Register a new guess\n  while(!guessLogged) {\n    registerGuess();\n  }\n  \n  // Compare & Display\n  delay(500);\n  solveCode();\n  attempt += 2;\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 4 —"}]," ",["$","code",null,{"children":"generateCode()"}],"."]}],["$","$Le",null,{"code":"void generateCode() {  \n  for(int i = 0; i < 4; i++) {\n    code[i] = random(4);\n  }\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 5 —"}]," ",["$","code",null,{"children":"registerGuess()"}],"."]}],["$","$Le",null,{"code":"void registerGuess() {\n  for(int i = 0; i < 4; i++) {\n    if(digitalRead(BTN_RED) == 0) {\n      guess[i] = 0;\n      leds[attempt * NUM_ROWS + i] = red;\n    }\n    else if(digitalRead(BTN_GREEN) == 0) {\n      guess[i] = 1;\n      leds[attempt * NUM_ROWS + i] = green;\n    }\n    else if(digitalRead(BTN_BLUE) == 0) {\n      guess[i] = 2;\n      leds[attempt * NUM_ROWS + i] = blue;\n    }\n    else if(digitalRead(BTN_WHITE) == 0) {\n      guess[i] = 3;\n      leds[attempt * NUM_ROWS + i] = white;\n    }\n    else\n      i--;\n\n    FastLED.show();\n    delay(150);\n  }\n\n  guessLogged = true;\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 6 —"}]," ",["$","code",null,{"children":"solveCode()"}],": compare guess to code, set green/red feedback, win/lose routing."]}],["$","$Le",null,{"code":"void solveCode() {\n  for(int i = 0; i < 4; i++) {\n    if(guess[i] == code[i])\n      leds[attempt * NUM_ROWS + 4 + i] = green;\n    else\n      leds[attempt * NUM_ROWS + 4 + i] = red;\n  }\n  FastLED.show();\n\n  bool codeBroken = true;\n  for(int i = 0; i < 4; i++) {\n    if(guess[i] != code[i]) {\n      codeBroken = false;\n      break;\n    }\n  }\n  \n  if(codeBroken) {\n    correctLEDs();\n    gameActive = false;\n  }\n  else if(attempt > 4) {\n    incorrectLEDs();\n    gameActive = false;\n  }\n\n  guessLogged = false;\n}"}],"$Lf","$L10"]}]
+11:Tb36,/*
+ * Code-Break Game
+ * 
+ * Fun code-break game on an 8x8 LED matrix with 4 button inputs.
+ * 
+ * The circuit:
+ * > Switches - DI #2, #3, #4 & #5
+ * > NeoPixel LED Matrix - DI #7
+ * 
+ * Created 22/04/2022
+ * By Wael Osman
+*/
+// Imports
+#include <FastLED.h>
+
+// Pin Setup & Matrix Size
+const int DATA_PIN = 7;
+const int BTN_RED = 2;
+const int BTN_GREEN = 3;
+const int BTN_BLUE = 4;
+const int BTN_WHITE = 5;
+
+const int NUM_ROWS = 8;
+const int NUM_COLS = 8;
+const int NUM_LEDS = NUM_ROWS * NUM_COLS;
+
+// Color & Array of LEDs
+CRGB red(50, 0, 0);
+CRGB green(0, 50, 0);
+CRGB blue(0, 0, 50);
+CRGB white(50, 50, 50);
+
+CRGB leds[NUM_LEDS];
+
+// Game Setup
+bool gameActive;
+bool guessLogged;
+int code[4];
+int guess[4];
+int attempt;
+
+void setup() {
+  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
+  pinMode(BTN_RED, INPUT_PULLUP);
+  pinMode(BTN_GREEN, INPUT_PULLUP);
+  pinMode(BTN_BLUE, INPUT_PULLUP);
+  pinMode(BTN_WHITE, INPUT_PULLUP);
+  
+  gameActive = false;
+  guessLogged = false;
+}
+
+void loop() {
+  // Start a new game
+  if(!gameActive) {
+    generateCode();
+    gameActive = true;
+    attempt = 0;
+    FastLED.clear();
+  }
+  
+  // Register a new guess
+  while(!guessLogged) {
+    registerGuess();
+  }
+  
+  // Compare & Display
+  delay(500);
+  solveCode();
+  attempt += 2;
+}
+
+void generateCode() {  
+  for(int i = 0; i < 4; i++) {
+    code[i] = random(4);
+  }
+}
+
+void registerGuess() {
+  for(int i = 0; i < 4; i++) {
+    if(digitalRead(BTN_RED) == 0) {
+      guess[i] = 0;
+      leds[attempt * NUM_ROWS + i] = red;
+    }
+    else if(digitalRead(BTN_GREEN) == 0) {
+      guess[i] = 1;
+      leds[attempt * NUM_ROWS + i] = green;
+    }
+    else if(digitalRead(BTN_BLUE) == 0) {
+      guess[i] = 2;
+      leds[attempt * NUM_ROWS + i] = blue;
+    }
+    else if(digitalRead(BTN_WHITE) == 0) {
+      guess[i] = 3;
+      leds[attempt * NUM_ROWS + i] = white;
+    }
+    else
+      i--;
+
+    FastLED.show();
+    delay(150);
+  }
+  
+  guessLogged = true;
+}
+
+void solveCode() {
+  for(int i = 0; i < 4; i++) {
+    if(guess[i] == code[i])
+      leds[attempt * NUM_ROWS + 4 + i] = green;
+    else
+      leds[attempt * NUM_ROWS + 4 + i] = red;
+  }
+  FastLED.show();
+
+  bool codeBroken = true;
+  for(int i = 0; i < 4; i++) {
+    if(guess[i] != code[i]) {
+      codeBroken = false;
+      break;
+    }
+  }
+  
+  if(codeBroken) {
+    correctLEDs();
+    gameActive = false;
+  }
+  else if(attempt > 4) {
+    incorrectLEDs();
+    gameActive = false;
+  }
+
+  guessLogged = false;
+}
+
+void correctLEDs() {
+  delay(2000);
+  FastLED.clear();
+  leds[18] = green;
+  leds[21] = green;
+  leds[34] = green;
+  leds[37] = green;
+  leds[43] = green;
+  leds[44] = green;
+  FastLED.show();
+  delay(2000);
+}
+
+void incorrectLEDs() {
+  delay(2000);
+  FastLED.clear();
+  leds[18] = red;
+  leds[21] = red;
+  leds[35] = red;
+  leds[36] = red;
+  leds[42] = red;
+  leds[45] = red;
+  FastLED.show();
+  delay(2000);
+}9:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Full Code"}],["$","$Le",null,{"code":"$11"}]]}]
+a:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Attribution"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Original Code Break Game project by Wael Osman."}]]}]
+b:["$","$L12",null,{"children":["$L13",["$","$L14",null,{"promise":"$@15"}]]}]
+c:["$","$1","h",{"children":[null,[["$","$L16",null,{"children":"$L17"}],null],["$","$L18",null,{"children":["$","div",null,{"hidden":true,"children":["$","$19",null,{"fallback":null,"children":"$L1a"}]}]}]]}]
+f:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 7 —"}]," ",["$","code",null,{"children":"correctLEDs()"}]," and ",["$","code",null,{"children":"incorrectLEDs()"}]," — simple smile / frown pixel art on the matrix."]}]
+10:["$","$Le",null,{"code":"void correctLEDs() {\n  delay(2000);\n  FastLED.clear();\n  leds[18] = green;\n  leds[21] = green;\n  leds[34] = green;\n  leds[37] = green;\n  leds[43] = green;\n  leds[44] = green;\n  FastLED.show();\n  delay(2000);\n}\n\nvoid incorrectLEDs() {\n  delay(2000);\n  FastLED.clear();\n  leds[18] = red;\n  leds[21] = red;\n  leds[35] = red;\n  leds[36] = red;\n  leds[42] = red;\n  leds[45] = red;\n  FastLED.show();\n  delay(2000);\n}"}]
+17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:null
+15:{"metadata":[["$","title","0",{"children":"Dawson makerSPACE Internships Hub"}],["$","meta","1",{"name":"description","content":"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."}]],"error":null,"digest":"$undefined"}
+1a:"$15:metadata"

@@ -1,0 +1,206 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","203","static/chunks/app/resources/whack-a-mole/page-ba809c30a1b57555.js"],""]
+e:I[7150,[],""]
+:HL["/mspace-internships/_next/static/css/d5262d962b1c9015.css","style"]
+0:{"P":null,"b":"E3eC1GE3HZ7fpR9l8lP4o","p":"/mspace-internships","c":["","resources","whack-a-mole",""],"i":false,"f":[[["",{"children":["resources",{"children":["whack-a-mole",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mspace-internships/_next/static/css/d5262d962b1c9015.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen antialiased","children":["$","div",null,{"className":"relative flex min-h-screen flex-col","children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t-4 border-[var(--ink)] bg-transparent py-6","children":["$","div",null,{"className":"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8","children":["$","p",null,{"className":"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]","children":"Dawson makerSPACE Internships · DG-STEAM · CoLearn"}]}]}]]}]}]}]]}],{"children":["resources",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["whack-a-mole",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8","children":[["$","section",null,{"className":"panel p-6 sm:p-8","children":[["$","span",null,{"className":"tag","children":"Resources · LED Making"}],["$","h1",null,{"className":"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl","children":"Whack-A-Mole"}],["$","p",null,{"className":"mt-4 max-w-3xl text-xl font-semibold leading-relaxed","children":"Full wiring notes and code for a 3-LED reflex game: potentiometer sets difficulty (EASY / NORMAL / HARD time windows), score and high score on Serial."}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-3","children":[["$","$L4",null,{"href":"/resources","className":"btn btn-secondary","children":"Back to Resources"}],["$","$L4",null,{"href":"/sessions/tracks/led","className":"btn btn-primary","children":"Back to LED Track"}]]}]]}],["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Overview"}],["$","div",null,{"className":"mt-6 grid gap-6 md:grid-cols-2","children":[["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"Prerequisites"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno"}],["$","li",null,{"children":"LEDs"}],["$","li",null,{"children":"Switches"}],["$","li",null,{"children":"Potentiometer"}],["$","li",null,{"children":"For Loops / While Loops"}],"$L5"]}]]}],"$L6"]}]]}],"$L7","$L8","$L9","$La","$Lb"]}],null,"$Lc"]}],{},null,false]},null,false]},null,false]},null,false],"$Ld",false]],"m":"$undefined","G":["$e",[]],"s":false,"S":true}
+f:I[8874,["619","static/chunks/619-ba102abea3e3d0e4.js","203","static/chunks/app/resources/whack-a-mole/page-ba809c30a1b57555.js"],"default"]
+19:I[4431,[],"OutletBoundary"]
+1b:I[5278,[],"AsyncMetadataOutlet"]
+1d:I[4431,[],"ViewportBoundary"]
+1f:I[4431,[],"MetadataBoundary"]
+20:"$Sreact.suspense"
+5:["$","li",null,{"children":"If Statements / Switch Statements"}]
+6:["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"List of components"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno Board"}],["$","li",null,{"children":"17 M-M wires"}],["$","li",null,{"children":"3 Push Buttons"}],["$","li",null,{"children":"3 LED lights"}],["$","li",null,{"children":"3× 220Ω resistors"}]]}]]}]
+7:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"How does it work?"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":["Three LEDs are the moles; three buttons are the whacks. The potentiometer sets the reaction window (~2s / 1s / 0.5s). Press the start button to begin. Hit the button that matches the lit LED before time runs out. Score is consecutive hits; miss once and the game ends with three blinks. ",["$","code",null,{"children":"btn3"}]," is both the start control and mole #3."]}]]}]
+8:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Set Up"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"LEDs use 220Ω resistors. Install the potentiometer on the breadboard as in the diagram."}],["$","div",null,{"className":"mt-6 panel track-card p-4","children":["$","img",null,{"src":"/mspace-internships/images/whack-a-mole/whack-a-mole_bb.png","alt":"Whack-A-Mole breadboard wiring","className":"h-auto w-full"}]}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"Analog pin A0"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":["Difficulty uses ",["$","code",null,{"children":"analogRead(A0)"}]," — no separate ",["$","code",null,{"children":"#define"}],"; the potentiometer wiper goes to A0."]}]]}]]}]
+9:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Coding"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 1 —"}]," Declare pins, score, timer variables."]}],["$","$Lf",null,{"code":"// IO Setup\nconst int btn1 = 3;\nconst int btn2 = 7;\nconst int btn3 = 11;\nconst int led1 = 2;\nconst int led2 = 6;\nconst int led3 = 10;\n\n// Score Setup\nint highScore = 0;        // Keeps track of the session's highest score.\nint score = 0;            // Keeps track of the game's current score.\nbool gameActive = false;  // Keeps track of the game status.\n\n// Timer Setup\nunsigned long eventInterval;\nunsigned long previousTime;\nunsigned long currentTime;"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 2 —"}]," ",["$","code",null,{"children":"setup()"}],": Serial and pin modes for three LEDs and three buttons."]}],["$","$Lf",null,{"code":"void setup() {\n  Serial.begin(9600);\n  // Mole 1\n  pinMode(led1, OUTPUT);\n  pinMode(btn1, INPUT_PULLUP);\n  // Mole 2\n  pinMode(led2, OUTPUT);\n  pinMode(btn2, INPUT_PULLUP);\n  // Mole 3\n  pinMode(led3, OUTPUT);\n  pinMode(btn3, INPUT_PULLUP);\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 3 —"}]," ",["$","code",null,{"children":"loop()"}],": wait for start, run gameplay ",["$","code",null,{"children":"while"}]," loop with"," ",["$","code",null,{"children":"newMole"}],", ",["$","code",null,{"children":"newWhack"}],", ",["$","code",null,{"children":"checkResult"}],", ",["$","code",null,{"children":"lightsOff"}],"."]}],["$","$Lf",null,{"code":"void loop() {\n  score = 0;                          // Resets the score every game.\n\n  // Start Game\n  if (digitalRead(btn3) == 0) {       // Checks if the \"start button\" was pushed.\n    Serial.println(\"Game Started!\");\n    checkSpeed();                     // Uses the potentiometer to set the speed.\n    gameActive = true;                // Starts the game.\n    delay(500);\n  }\n\n  // Main Gameplay\n  while (gameActive) {                // Loops as long as the game isn't over.\n    int mole = newMole();             // Lights up a random LED.\n    int whack = newWhack();           // Registers the player's action.\n    checkResult(mole, whack);         // Compares the mole and the whack values.\n    lightsOff();                      // Turns all the LEDs off.\n  }\n\n  delay(50);\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 4 —"}]," ",["$","code",null,{"children":"checkSpeed()"}]," maps the potentiometer to three difficulty thresholds."]}],["$","$Lf",null,{"code":"void checkSpeed() {\n  int speedValue = analogRead(A0);        // Store the current voltage value.\n\n  // The potentiometer value ranges from 0 to 1023 so we will split it in 3 areas.\n  if (speedValue > 682) {\n    eventInterval = 500;                  // Sets the time window to 0.5 seconds.\n    Serial.println(\"Difficulty: HARD\");\n  }\n  else if (speedValue > 341) {\n    eventInterval = 1000;                 // Sets the time window to 1 second.\n    Serial.println(\"Difficulty: NORMAL\");\n  }\n  else {\n    eventInterval = 2000;                 // Sets the time window to 2 seconds.\n    Serial.println(\"Difficulty: EASY\");\n  }\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 5 —"}]," ",["$","code",null,{"children":"lightsOff"}],", ",["$","code",null,{"children":"lightsOn"}],", ","$L10","."]}],"$L11","$L12","$L13","$L14","$L15","$L16","$L17"]}]
+18:Tbfb,/*
+ * Whack-A-Mole
+ *
+ * Whack-A-Mole game using LEDs as moles and Buttons as hitboxes
+ *
+ * The circuit:
+ * > 3 LEDs - DI #2, #6, #10
+ * > 3 Switches - DI #3, #7, #11
+ *
+ * Created 03/03/2022
+ * By Wael Osman
+ *
+ * Modified 11/03/2022
+ * By Wael Osman
+*/
+// IO Setup
+const int btn1 = 3;
+const int btn2 = 7;
+const int btn3 = 11;
+const int led1 = 2;
+const int led2 = 6;
+const int led3 = 10;
+
+// Score Setup
+int highScore = 0;
+int score = 0;
+bool gameActive = false;
+
+// Timer Setup
+unsigned long eventInterval;
+unsigned long previousTime;
+unsigned long currentTime;
+
+void setup()
+{
+  Serial.begin(9600);
+  // Mole 1
+  pinMode(led1, OUTPUT);
+  pinMode(btn1, INPUT_PULLUP);
+  // Mole 2
+  pinMode(led2, OUTPUT);
+  pinMode(btn2, INPUT_PULLUP);
+  // Mole 3
+  pinMode(led3, OUTPUT);
+  pinMode(btn3, INPUT_PULLUP);
+  // Extras
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  score = 0;
+
+  // Start the game
+  if (digitalRead(btn3) == 0) {
+    Serial.println("Game Started!");
+    checkSpeed();
+    gameActive = true;
+    delay(500);
+  }
+
+  // Main Gameplay
+  while (gameActive) {
+    int mole = newMole();
+    int whack = newWhack();
+    checkResult(mole, whack);
+    lightsOff();
+  }
+
+  delay(50);
+}
+
+void checkSpeed() {
+  int speedValue = analogRead(A0);
+  if (speedValue > 682) {
+    eventInterval = 500;
+    Serial.println("Difficulty: HARD");
+  }
+  else if (speedValue > 341) {
+    eventInterval = 1000;
+    Serial.println("Difficulty: NORMAL");
+  }
+  else {
+    eventInterval = 2000;
+    Serial.println("Difficulty: EASY");
+  }
+}
+
+void lightsOff() {
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  digitalWrite(led3, LOW);
+  delay(500);
+}
+
+void lightsOn() {
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, HIGH);
+  delay(500);
+}
+
+void lightsBlink(int blinks) {
+  while (blinks > 0) {
+    lightsOn();
+    lightsOff();
+    blinks--;
+  }
+}
+
+int newMole() {
+  int mole = random(1, 4);
+
+  switch (mole) {
+    case 1:
+      digitalWrite(led1, HIGH);
+      break;
+    case 2:
+      digitalWrite(led2, HIGH);
+      break;
+    case 3:
+      digitalWrite(led3, HIGH);
+      break;
+    default:
+      Serial.print("Mole not found!");
+      break;
+  }
+  return mole;
+}
+
+int newWhack() {
+  previousTime = millis();
+  int whack = 0;
+
+  while (whack == 0) {
+    currentTime = millis();
+
+    if (currentTime - previousTime < eventInterval) {
+      if (digitalRead(btn1) == 0)
+        whack = 1;
+      if (digitalRead(btn2) == 0)
+        whack = 2;
+      if (digitalRead(btn3) == 0)
+        whack = 3;
+    }
+    else {
+      previousTime = currentTime;
+      return whack = 0;
+    }
+  }
+  return whack;
+}
+
+void checkResult(int mole, int whack) {
+  if (mole == whack) {
+    score++;
+    delay(50);
+  }
+  else {
+    if (score > highScore)
+      highScore = score;
+
+    gameActive = false;
+    lightsBlink(3);
+
+    Serial.println("---------- Game Over ----------");
+    Serial.print("Score: ");
+    Serial.print(score);
+    Serial.print("\tHigh Score: ");
+    Serial.print(highScore);
+    Serial.println("\n-------------------------------\n");
+  }
+}a:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Full Code"}],["$","$Lf",null,{"code":"$18"}]]}]
+b:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Attribution"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Original Whack-A-Mole project by Wael Osman."}]]}]
+c:["$","$L19",null,{"children":["$L1a",["$","$L1b",null,{"promise":"$@1c"}]]}]
+d:["$","$1","h",{"children":[null,[["$","$L1d",null,{"children":"$L1e"}],null],["$","$L1f",null,{"children":["$","div",null,{"hidden":true,"children":["$","$20",null,{"fallback":null,"children":"$L21"}]}]}]]}]
+10:["$","code",null,{"children":"lightsBlink"}]
+11:["$","$Lf",null,{"code":"void lightsOff() {\n  digitalWrite(led1, LOW);\n  digitalWrite(led2, LOW);\n  digitalWrite(led3, LOW);\n  delay(500);\n}\n\nvoid lightsOn() {\n  digitalWrite(led1, HIGH);\n  digitalWrite(led2, HIGH);\n  digitalWrite(led3, HIGH);\n  delay(500);\n}\n\n// Makes the lights blink (blinks) time(s).\nvoid lightsBlink(int blinks) {\n  while (blinks > 0) {\n    lightsOn();                 // Turns off all the lights.\n    lightsOff();                // Turns on all the lights.\n    blinks--;                   // Decrements the blinks left by 1.\n  }\n}"}]
+12:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 6 —"}]," ",["$","code",null,{"children":"newMole()"}]," picks 1–3 and lights the matching LED."]}]
+13:["$","$Lf",null,{"code":"int newMole() {\n  int mole = random(1, 4);  // Picks a random number between 1 and 4 exclusive.\n\n  // Lights up the respective LED using a switch case.\n  switch (mole) {\n    case 1:\n      digitalWrite(led1, HIGH);\n      break;\n    case 2:\n      digitalWrite(led2, HIGH);\n      break;\n    case 3:\n      digitalWrite(led3, HIGH);\n      break;\n    default:\n      Serial.print(\"Mole not found!\");\n      break;\n  }\n  return mole;\n}"}]
+14:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 7 —"}]," ",["$","code",null,{"children":"newWhack()"}]," uses ",["$","code",null,{"children":"millis()"}]," for the reaction window."]}]
+15:["$","$Lf",null,{"code":"int newWhack() {\n  previousTime = millis();        // Stores the time the game asks for an input.\n  int whack = 0;\n\n  while (whack == 0) {            // If there's no input, it'll keep checking time.\n    currentTime = millis();       // Stores the current time.\n\n    // Checks if the difference between the current time and the time the game\n    // started asking for the player's input is bigger than the period allocated.\n    if (currentTime - previousTime < eventInterval) {\n      if (digitalRead(btn1) == 0)\n        whack = 1;\n      if (digitalRead(btn2) == 0)\n        whack = 2;\n      if (digitalRead(btn3) == 0)\n        whack = 3;\n    }\n    else {\n      // If the time limit is passed, update the previous time and return 0.\n      previousTime = currentTime;\n      return whack = 0;\n    }\n  }\n  return whack;\n}"}]
+16:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Step 8 —"}]," ",["$","code",null,{"children":"checkResult()"}]," updates score or ends the game."]}]
+17:["$","$Lf",null,{"code":"void checkResult(int mole, int whack) {\n  // Successful match\n  if (mole == whack) {        // Compares the lit LED and pushed Button.\n    score++;                  // Increments the current score by 1.\n    delay(50);\n  }\n  // Unsuccessful match\n  else {\n    if (score > highScore)\n      highScore = score;      // Sets the new high score if it's better.\n\n    gameActive = false;       // Turns off the game.\n    lightsBlink(3);           // Makes the lights blink 3 times to signal \"Game Over\".\n\n    // Print a nice receipt of the game on the Serial Monitor.\n    Serial.println(\"---------- Game Over ----------\");\n    Serial.print(\"Score: \");\n    Serial.print(score);\n    Serial.print(\"\\tHigh Score: \");\n    Serial.print(highScore);\n    Serial.println(\"\\n-------------------------------\\n\");\n  }\n}"}]
+1e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1a:null
+1c:{"metadata":[["$","title","0",{"children":"Dawson makerSPACE Internships Hub"}],["$","meta","1",{"name":"description","content":"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."}]],"error":null,"digest":"$undefined"}
+21:"$1c:metadata"

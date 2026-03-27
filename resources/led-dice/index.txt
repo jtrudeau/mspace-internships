@@ -1,0 +1,371 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","666","static/chunks/app/resources/led-dice/page-ba809c30a1b57555.js"],""]
+d:I[7150,[],""]
+:HL["/mspace-internships/_next/static/css/d5262d962b1c9015.css","style"]
+0:{"P":null,"b":"E3eC1GE3HZ7fpR9l8lP4o","p":"/mspace-internships","c":["","resources","led-dice",""],"i":false,"f":[[["",{"children":["resources",{"children":["led-dice",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mspace-internships/_next/static/css/d5262d962b1c9015.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen antialiased","children":["$","div",null,{"className":"relative flex min-h-screen flex-col","children":[["$","main",null,{"className":"flex-1","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t-4 border-[var(--ink)] bg-transparent py-6","children":["$","div",null,{"className":"mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8","children":["$","p",null,{"className":"font-display text-sm font-black uppercase tracking-wide text-[var(--ink)]","children":"Dawson makerSPACE Internships · DG-STEAM · CoLearn"}]}]}]]}]}]}]]}],{"children":["resources",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["led-dice",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto w-full max-w-5xl px-4 pb-20 pt-12 sm:px-6 lg:px-8","children":[["$","section",null,{"className":"panel p-6 sm:p-8","children":[["$","span",null,{"className":"tag","children":"Resources · LED Making"}],["$","h1",null,{"className":"mt-4 font-display text-4xl leading-tight text-[var(--teal-deep)] sm:text-5xl","children":"LED Dice"}],["$","p",null,{"className":"mt-4 max-w-3xl text-xl font-semibold leading-relaxed","children":"Roll a virtual 6-sided die: press the button, watch the animation, then see the dice face on the 8×8 NeoPixel matrix."}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-3","children":[["$","$L4",null,{"href":"/resources","className":"btn btn-secondary","children":"Back to Resources"}],["$","$L4",null,{"href":"/sessions/tracks/led","className":"btn btn-primary","children":"Back to LED Track"}]]}]]}],["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Overview"}],["$","div",null,{"className":"mt-6 grid gap-6 md:grid-cols-2","children":[["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"Prerequisites"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno"}],["$","li",null,{"children":"LEDs / Switches / Resistors"}],["$","li",null,{"children":"Pseudo Random Number Generation"}],["$","li",null,{"children":"Programming Basics"}],["$","li",null,{"children":"FastLED Library"}]]}]]}],"$L5"]}]]}],"$L6","$L7","$L8","$L9","$La"]}],null,"$Lb"]}],{},null,false]},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",[]],"s":false,"S":true}
+e:I[8874,["619","static/chunks/619-ba102abea3e3d0e4.js","666","static/chunks/app/resources/led-dice/page-ba809c30a1b57555.js"],"default"]
+13:I[4431,[],"OutletBoundary"]
+15:I[5278,[],"AsyncMetadataOutlet"]
+17:I[4431,[],"ViewportBoundary"]
+19:I[4431,[],"MetadataBoundary"]
+1a:"$Sreact.suspense"
+5:["$","div",null,{"children":[["$","h3",null,{"className":"text-2xl font-black text-[var(--teal-deep)]","children":"List of components"}],["$","ul",null,{"className":"checklist mt-4 space-y-3 text-base font-semibold","children":[["$","li",null,{"children":"Arduino Uno Board"}],["$","li",null,{"children":"5 M-M wires + 3 F-M wires"}],["$","li",null,{"children":"1× Push Button"}],["$","li",null,{"children":"1× 220Ω Resistor"}],["$","li",null,{"children":"1× NeoPixel 8×8 LED Matrix"}]]}]]}]
+6:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"How does it work?"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"On button press, a short rolling animation runs (every 10th LED lights green), then a random value 1–6 selects a dice face drawn in green on the matrix. The face clears after a few seconds."}]]}]
+7:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Set Up"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Connect DIN → DI #3, +5V → 5V, GND → GND (labels on the back of the matrix). The Fritzing part may differ from the kit matrix — match your hardware."}],["$","div",null,{"className":"mt-6 panel track-card p-4","children":["$","img",null,{"src":"/mspace-internships/images/led-dice/LEDDiceDiagram.png","alt":"LED Dice wiring diagram","className":"h-auto w-full"}]}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"setColor(x, y) uses 1-based coordinates"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":["The helper subtracts 1 when indexing into the LED array, so ",["$","code",null,{"children":"x"}]," and ",["$","code",null,{"children":"y"}]," start at 1 for the visible grid, not 0."]}]]}],["$","div",null,{"className":"mt-4 border-2 border-[var(--ink)] bg-[var(--mint)] p-4","children":[["$","p",null,{"className":"text-sm font-black uppercase tracking-[0.08em] text-[var(--teal-deep)]","children":"Animation delay"}],["$","div",null,{"className":"mt-2 text-base font-semibold leading-relaxed","children":["The curriculum comment says \"1 ms\" delay between animation LEDs; the sketch uses ",["$","code",null,{"children":"delay(100)"}]," ","so the roll is visible."]}]]}]]}]
+f:T108f,void rollingDice(){
+  randomSeed(analogRead(0)); 
+  int diceRoll = random(1,7); // Generating a random number between 1 and 6 //
+
+switch(diceRoll){
+    case 1:
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 2:
+      setColor(3,5, CRGB(0,255,0)); // Top
+      setColor(3,6, CRGB(0,255,0));
+      setColor(4,5, CRGB(0,255,0));
+      setColor(4,6, CRGB(0,255,0));
+    
+      setColor(5,3, CRGB(0,255,0)); // Bottom
+      setColor(5,4, CRGB(0,255,0));
+      setColor(6,3, CRGB(0,255,0));
+      setColor(6,4, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 3:
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+    
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 4:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+      
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+      
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 5:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 6:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+     
+      setColor(4,7, CRGB(0,255,0)); // Top Middle
+      setColor(4,8, CRGB(0,255,0));
+      setColor(5,7, CRGB(0,255,0));
+      setColor(5,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+
+      setColor(4,1, CRGB(0,255,0)); // Bottom Middle
+      setColor(4,2, CRGB(0,255,0));
+      setColor(5,1, CRGB(0,255,0));
+      setColor(5,2, CRGB(0,255,0));
+
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+  }
+
+for(int i=0; i < NUM_LEDS; i++){
+    leds[i] = CRGB(0,0,0); // Turns off all LEDs
+    FastLED.show();
+}
+
+// Before 
+void loop() {
+  if(buttonPressed(BTN_PIN)){
+    for(int i = 1; i <= NUM_ROWS; i++){
+      setColor(i,i, CRGB(0,0,255));
+      FastLED.show();
+    }
+    delay(3000);
+  }
+
+  for(int i = 1; i <= NUM_ROWS; i++){
+    setColor(i,i, CRGB(0,0,0));
+    FastLED.show();
+  }
+}
+
+// After 
+void loop(){
+  if(buttonPressed(BTN_PIN)){
+    rollingDice();
+  }
+}8:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Coding"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Part 1 —"}]," FastLED setup: grid size, ",["$","code",null,{"children":"setColor"}],", ",["$","code",null,{"children":"setup"}],", and a quick diagonal test pattern."]}],["$","$Le",null,{"code":"#include <FastLED.h>\n\n// Constant Variables for Rows and Columns\nconst int NUM_ROWS = 8;\nconst int NUM_COLS = 8;\n\nconst int NUM_LEDS = NUM_ROWS*NUM_COLS;\n\n// Array to hold color data for each LED in the Matrix\nCRGB leds[NUM_LEDS];\n\n// Digital Input Pin (DIN)\nconst int DATA_PIN = 3;\n\n// Pin connecting the Push Button to the Arduino Board\nconst int BTN_PIN = 5;\n\nvoid setColor(int x, int y, CRGB color){\n  int index = (NUM_ROWS * (y-1)) + x-1;\n  leds[index] = color;\n}\n\nvoid setup() {\n  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);\n}\n\nvoid loop() {\n  for(int i = 1; i <= NUM_ROWS; i++){\n    setColor(i,i, CRGB(0,0,255));\n    FastLED.show();\n  }\n  delay(10000);\n\n  for(int i = 1; i <= NUM_ROWS; i++){\n    setColor(i,i, CRGB(0,0,0));\n    FastLED.show();\n  }\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Part 2 —"}]," ",["$","code",null,{"children":"buttonPressed()"}]," edge detection and a ",["$","code",null,{"children":"loop()"}]," that reacts to presses."]}],["$","$Le",null,{"code":"int buttonPressed(uint8_t button) {\n  static uint16_t lastStates = 0;\n  uint8_t state = digitalRead(button);\n  if (state != ((lastStates >> button) & 1)) {\n    lastStates ^= 1 << button;\n    return state == HIGH;\n  }\n  return false;\n}\n\nvoid loop() {\n  if(buttonPressed(BTN_PIN)){\n    for(int i = 1; i <= NUM_ROWS; i++){\n      setColor(i,i, CRGB(0,0,255));\n      FastLED.show();\n    }\n    delay(3000);\n  }\n\n  for(int i = 1; i <= NUM_ROWS; i++){\n    setColor(i,i, CRGB(0,0,0));\n    FastLED.show();\n  }\n}"}],["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Part 3 —"}]," ",["$","code",null,{"children":"rollingDice()"}],": animation, random seed, and the switch that draws each dice face."]}],["$","$Le",null,{"code":"$f"}],"$L10","$L11"]}]
+12:T13b0,/*
+ * Simulated Dice
+ *
+ * Simulated Dice using 8x8 LED Matrix and Push Button.
+ *
+ * The circuit:
+ * > Push Button - DI #5
+ * > NeoPixel LED Matrix - DI #3
+ *
+ * Created 04/01/2022
+ * By Justin Matte
+ *
+ * Modified 05/11/2022
+ * By Justin Matte
+*/
+
+#include <FastLED.h>
+
+const int NUM_ROWS = 8;
+const int NUM_COLS = 8;
+
+const int NUM_LEDS = NUM_ROWS*NUM_COLS;
+CRGB leds[NUM_LEDS];
+
+const int DATA_PIN = 3;
+
+const int BTN_PIN = 5;
+
+void setColor(int x, int y, CRGB color){
+  int index = (NUM_ROWS * (y-1)) + (x-1);
+  leds[index] = color;
+}
+
+void resetMatrix(){
+  for(int i=0; i < NUM_LEDS; i++){
+    leds[i] = CRGB(0,0,0); // Turns off all LEDs
+    FastLED.show();
+  }
+}
+
+void rollingDice(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    if(i % 10 == 0){
+      leds[i] = CRGB(0,255,0);
+      delay(100); // Delay of 1 ms
+      FastLED.show();
+    }
+  }
+  resetMatrix();
+  
+  randomSeed(analogRead(0));
+  int diceRoll = random(1,7); // Generating a random number between 1 and 6 // 
+
+  switch(diceRoll){
+    case 1:
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 2:
+      setColor(3,5, CRGB(0,255,0)); // Top
+      setColor(3,6, CRGB(0,255,0));
+      setColor(4,5, CRGB(0,255,0));
+      setColor(4,6, CRGB(0,255,0));
+    
+      setColor(5,3, CRGB(0,255,0)); // Bottom
+      setColor(5,4, CRGB(0,255,0));
+      setColor(6,3, CRGB(0,255,0));
+      setColor(6,4, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 3:
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+    
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 4:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+      
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+      
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 5:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(4,4, CRGB(0,255,0)); // Middle
+      setColor(4,5, CRGB(0,255,0));
+      setColor(5,4, CRGB(0,255,0));
+      setColor(5,5, CRGB(0,255,0));
+
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+    case 6:
+      setColor(7,7, CRGB(0,255,0)); // Top Left
+      setColor(7,8, CRGB(0,255,0));
+      setColor(8,7, CRGB(0,255,0));
+      setColor(8,8, CRGB(0,255,0));
+     
+      setColor(4,7, CRGB(0,255,0)); // Top Middle
+      setColor(4,8, CRGB(0,255,0));
+      setColor(5,7, CRGB(0,255,0));
+      setColor(5,8, CRGB(0,255,0));
+      
+      setColor(1,7, CRGB(0,255,0)); // Top Right
+      setColor(1,8, CRGB(0,255,0));
+      setColor(2,7, CRGB(0,255,0));
+      setColor(2,8, CRGB(0,255,0));
+
+      setColor(7,1, CRGB(0,255,0)); // Bottom Left
+      setColor(7,2, CRGB(0,255,0));
+      setColor(8,1, CRGB(0,255,0));
+      setColor(8,2, CRGB(0,255,0));
+
+      setColor(4,1, CRGB(0,255,0)); // Bottom Middle
+      setColor(4,2, CRGB(0,255,0));
+      setColor(5,1, CRGB(0,255,0));
+      setColor(5,2, CRGB(0,255,0));
+
+      setColor(1,1, CRGB(0,255,0)); // Bottom Right
+      setColor(1,2, CRGB(0,255,0));
+      setColor(2,1, CRGB(0,255,0));
+      setColor(2,2, CRGB(0,255,0));
+      FastLED.show();
+    break;
+  }
+}
+
+void setup() {
+  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
+}
+
+void loop() {
+  if(buttonPressed(BTN_PIN)){
+    rollingDice();
+  }
+  delay(3000);
+  resetMatrix();
+}
+
+int buttonPressed(uint8_t button) {
+  static uint16_t lastStates = 0;
+  uint8_t state = digitalRead(button);
+  if (state != ((lastStates >> button) & 1)) {
+    lastStates ^= 1 << button;
+    return state == HIGH;
+  }
+  return false;
+}9:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Full Code"}],["$","$Le",null,{"code":"$12"}]]}]
+a:["$","section",null,{"className":"mt-8 panel p-6","children":[["$","h2",null,{"className":"font-display text-3xl text-[var(--teal-deep)]","children":"Attribution"}],["$","p",null,{"className":"mt-3 text-base font-semibold leading-relaxed","children":"Original LED Dice project by Justin Matte."}]]}]
+b:["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]
+c:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],null],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1a",null,{"fallback":null,"children":"$L1b"}]}]}]]}]
+10:["$","p",null,{"className":"mt-6 text-base font-semibold leading-relaxed","children":[["$","strong",null,{"children":"Part 4 —"}]," ",["$","code",null,{"children":"resetMatrix()"}],", final ",["$","code",null,{"children":"loop()"}]," timing, and clearing the display."]}]
+11:["$","$Le",null,{"code":"void resetMatrix(){\n  for(int i=0; i < NUM_LEDS; i++){\n    leds[i] = CRGB(0,0,0);\n    FastLED.show();\n  }\n}\n\nvoid loop(){\n  if(buttonPressed(BTN_PIN)){\n    rollingDice();\n  }\n  delay(2000);\n  resetMatrix();\n}\n\nvoid rollingDice(){\n  for(int i = 0; i < NUM_LEDS; i++){\n      if(i % 10 == 0){\n        leds[i] = CRGB(0,255,0);\n        delay(100); // Delay of 1 ms\n        FastLED.show();\n      }\n  }\n  resetMatrix();"}]
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:null
+16:{"metadata":[["$","title","0",{"children":"Dawson makerSPACE Internships Hub"}],["$","meta","1",{"name":"description","content":"Student hub for Dawson makerSPACE internships: project tracks, timeline, and launch session resources."}]],"error":null,"digest":"$undefined"}
+1b:"$16:metadata"
