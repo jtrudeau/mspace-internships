@@ -8,6 +8,48 @@ const resources = [
     detail:
       "Full wiring instructions, staged coding walkthrough, and complete Arduino code pulled from the current LED curriculum source.",
   },
+  {
+    name: "LED Pattern Changing",
+    track: "LED Making",
+    path: "/resources/led-pattern-changing",
+    detail:
+      "A beginner button-and-LED project: press once to start, each press cycles through 7 different light patterns on 6 LEDs.",
+  },
+  {
+    name: "Binary Counter",
+    track: "LED Making",
+    path: "/resources/binary-counter",
+    detail:
+      "Count from 0 to 256 in binary using a NeoPixel LED stick and two buttons — a visual introduction to binary and FastLED.",
+  },
+  {
+    name: "LED Dice",
+    track: "LED Making",
+    path: "/resources/led-dice",
+    detail:
+      "Roll a virtual 6-sided die: press the button, watch the animation, see the dice face on the 8x8 NeoPixel matrix.",
+  },
+  {
+    name: "Whack-A-Mole",
+    track: "LED Making",
+    path: "/resources/whack-a-mole",
+    detail:
+      "Full wiring instructions and walkthrough for a 3-LED reflex game with potentiometer difficulty control.",
+  },
+  {
+    name: "Rock Paper Scissors",
+    track: "LED Making",
+    path: "/resources/rps-game",
+    detail:
+      "Wiring and step-by-step walkthrough for a 1-player vs Arduino RPS game using 3 LEDs and 3 buttons.",
+  },
+  {
+    name: "Code Break",
+    track: "LED Making",
+    path: "/resources/code-break",
+    detail:
+      "A Mastermind-style code-breaking game on the 8x8 LED matrix: guess the 4-color combination in 4 attempts.",
+  },
 ];
 
 export default function ResourcesPage() {

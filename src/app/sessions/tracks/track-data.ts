@@ -23,6 +23,43 @@ export const trackContent = {
       "Build a clear, interactive demo for ScienceFest and Dunrae that explains Mission Zero and inspires Grade 6 students.",
     updates: [
       {
+        date: "March 27, 2026",
+        title: "Sensor Inventory and 3D Print Prep",
+        summary:
+          "Take stock of everything the Sense HAT can actually do. Write up what you find. On the 3D printing side, get the flight case model into PrusaSlicer and export the gcode — Jerome will validate it. Hold there until he confirms.",
+        tasks: [
+          {
+            label:
+              "Inventory every sensor on the Sense HAT. For each one: what it is called, what it measures, the units, and one example of what you could do with it in a demo.",
+          },
+          {
+            label:
+              "Write a short report (1–2 pages) on your findings. Include a summary table and a paragraph on which sensors are most interesting for a Grade 6 audience and why.",
+          },
+          {
+            label:
+              "Note any sensors that did not work as expected or that you could not get a reading from.",
+          },
+          {
+            label:
+              "On 3D printing: download the Astro Pi Mark II flight case model from the Raspberry Pi project page.",
+            url: "https://projects.raspberrypi.org/en/projects/astro-pi-flight-case-mk2",
+          },
+          {
+            label:
+              "Import the model into PrusaSlicer, set up the print, and export the gcode file.",
+          },
+          {
+            label:
+              "Share the gcode with Jerome for validation.",
+          },
+          {
+            label:
+              "Hold here. Next steps depend on which sensor demo you want to build out.",
+          },
+        ],
+      },
+      {
         date: "March 14, 2026",
         title: "Study Break Sprint",
         summary:
@@ -91,6 +128,42 @@ export const trackContent = {
     goal:
       "Create a reliable Pico2 robot kit, run a Robotics for All workshop, and prepare a Wild Robot version for Grade 4 showcase.",
     updates: [
+      {
+        date: "March 27, 2026",
+        title: "Workshop Design",
+        summary:
+          "Pretend you are a total beginner who has never touched a robot or a microcontroller. Design a 2-hour workshop that gets someone from zero to a working robot doing something interesting. This is the stepping stone to the hackathon — by the end, participants should feel confident enough to show up and build something on their own.",
+        tasks: [
+          {
+            label:
+              "Define your participant. Who is this person? What do they know? What are they afraid of? Write a short persona (3–4 sentences).",
+          },
+          {
+            label:
+              "Propose a 2-hour session plan broken into blocks (suggest 15–20 min each). For each block: what happens, what the participant does, and what they should have by the end of it.",
+          },
+          {
+            label:
+              "Pick one activity that a total beginner can complete in under 30 minutes and that produces a visible result — the robot moves, turns, or reacts to something.",
+          },
+          {
+            label:
+              "Write a materials and setup checklist. Everything that needs to be on the table before the workshop starts.",
+          },
+          {
+            label:
+              "Write a \"What could go wrong\" list — the 5 most likely places a beginner will get stuck and what the facilitator should do.",
+          },
+          {
+            label:
+              "Explain how this workshop connects forward to the hackathon. What does someone who finished this workshop now know how to do? What would their first hackathon project look like?",
+          },
+          {
+            label:
+              "Package all of the above into one document that another intern could pick up and run.",
+          },
+        ],
+      },
       {
         date: "March 14, 2026",
         title: "Study Break Sprint",
@@ -170,6 +243,35 @@ export const trackContent = {
     goal:
       "Prepare a beginner-friendly LED activity with materials, facilitation steps, and repeatable workshop notes.",
     updates: [
+      {
+        date: "March 27, 2026",
+        title: "Next Project and Workshop Design",
+        summary:
+          "Simon Says is done. Now pick a second project and keep building. There are new resource pages being added from the LED curriculum — choose one of those or propose something of your own. On the workshop side, same deal as Pico: design a 2-hour beginner workshop from scratch.",
+        tasks: [
+          {
+            label:
+              "Choose your next project. Pick from the new resource pages or propose your own using the LED kit. If you propose your own, write a one-paragraph pitch explaining what it is, what components it uses, and why it is a good next step after Simon Says.",
+            url: "/resources",
+          },
+          {
+            label:
+              "Build it. Document what works, what breaks, and what you changed.",
+          },
+          {
+            label:
+              "Write up the build the same way Simon Says is documented — wiring, staged code walkthrough, full code, and attribution.",
+          },
+          {
+            label:
+              "On the workshop side: design a 2-hour beginner workshop for someone who has never used an Arduino or wired an LED. Define your participant, propose a session plan in 15–20 min blocks, pick one activity that produces a visible result in under 30 minutes, write the materials checklist, write the \"what could go wrong\" list, and explain how the workshop connects forward to ScienceFest.",
+          },
+          {
+            label:
+              "Package the workshop plan as one document another intern could run.",
+          },
+        ],
+      },
       {
         date: "March 16, 2026",
         title: "Simon Says Instructions",
@@ -278,6 +380,35 @@ export const trackContent = {
     goal:
       "Support Grade 6 teams during build sessions by helping them clarify their game idea, resolve one blocker at a time, and move toward one clear next step.",
     updates: [
+      {
+        date: "March 27, 2026",
+        title: "Team Project Deep Dive",
+        summary:
+          "Go through every Grade 6 team's Scratch project — not the business idea, the actual Scratch project. Open it, click around, read the code. Give each team concrete, Scratch-focused feedback: what works, what is missing, and one specific thing they could do next in Scratch to make their project better.",
+        tasks: [
+          {
+            label:
+              "Open every team's Scratch project link from the DG-STEAM Scratch hub. If a team does not have a working link, note that.",
+            url: "https://jtrudeau.github.io/dg-steam-scratch/",
+          },
+          {
+            label:
+              "For each project, write a short review (4–6 sentences) covering: what the project does right now when you hit the green flag, what Scratch blocks or patterns they are using, what is missing or broken, and one specific next step in Scratch terms (e.g., \"add a variable for score,\" \"use a broadcast to switch scenes,\" \"add a forever loop so the sprite keeps moving\").",
+          },
+          {
+            label:
+              "Note which teams have a Scratch project that matches their game idea and which teams have a gap between what they described and what exists in Scratch.",
+          },
+          {
+            label:
+              "Identify the 2–3 most common Scratch patterns or skills that multiple teams need help with. These become your priority helper topics for the next in-class session.",
+          },
+          {
+            label:
+              "Compile your reviews into one document organized by team name. Keep the tone helpful — these are Grade 6 students. Be specific about Scratch, not about the business concept.",
+          },
+        ],
+      },
       {
         date: "March 14, 2026",
         title: "Study Break Sprint",
