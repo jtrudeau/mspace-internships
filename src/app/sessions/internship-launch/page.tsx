@@ -137,6 +137,11 @@ export default function InternshipLaunchPage() {
         <h2 className="font-display text-3xl text-[var(--teal-deep)]">Publication</h2>
         <p className="mt-3 text-base font-semibold leading-relaxed">
           Publication means your work is used and seen. Plan for clear demos, repeatable facilitation, and handoff docs.
+          For ScienceFest posters, follow the hub&apos;s{" "}
+          <Link href="/sessions/sciencefest-poster" className="underline text-[var(--teal-deep)]">
+            ScienceFest poster guide
+          </Link>
+          .
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {publicationTargets.map((target) => (

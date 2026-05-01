@@ -11,6 +11,7 @@ This file links this repo to the THINK knowledge base.
 - README: `README.md`
 - Home hub: `src/app/page.tsx`
 - Launch guide: `src/app/sessions/internship-launch/page.tsx`
+- ScienceFest poster guide: `src/app/sessions/sciencefest-poster/page.tsx`
 - Track pages: `src/app/sessions/tracks/`
 
 ## Recent Updates

@@ -6,8 +6,9 @@ This repo powers the Dawson makerSPACE internship hub. For interns, this is the 
 
 1. Open the student launch guide.
    Path: `/mspace-internships/sessions/internship-launch/`
-2. Open your track page and work from the current task list.
-3. Post your weekly check-in in Discord.
+2. Preparing for ScienceFest posters? Use `/mspace-internships/sessions/sciencefest-poster/`
+3. Open your track page and work from the current task list.
+4. Post your weekly check-in in Discord.
 
 ## Track Pages
 

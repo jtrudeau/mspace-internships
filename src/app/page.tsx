@@ -50,34 +50,54 @@ const tracks = [
 
 const timeline = [
   {
-    when: "Week of Feb 24, 2026",
+    when: "Week of Feb 24",
     label: "Kickoff",
     detail: "Assignments, Discord setup, and first scoped tasks.",
   },
   {
-    when: "March 2026",
+    when: "March",
     label: "Build Phase",
-    detail: "Weekly sessions, weekly progress updates, and first prototypes.",
+    detail: "Weekly sessions, prototypes, and first classroom support.",
   },
   {
-    when: "March 27, 2026",
-    label: "Grade 4 Wild Robot Showcase",
-    detail: "Pico2 team observes and maps crossover opportunities.",
+    when: "April 6",
+    label: "Workshop Drafts Due",
+    detail: "Pico + LED: first-draft workshop plans. LED: second project built. Astro Pi: sensor demo working.",
   },
   {
-    when: "April 2026",
-    label: "Refinement",
-    detail: "Testing, workshop prep, docs, and materials budget estimate for June fair.",
-  },
-  {
-    when: "May 2026",
+    when: "April 13",
     label: "Dry Runs",
-    detail: "Practice workshop facilitation with peers before public sessions.",
+    detail: "Internal dry run of workshops. Revise. Pack materials kits. Poster drafts started.",
   },
   {
-    when: "May-June 2026",
-    label: "Publication Window",
-    detail: "ScienceFest, SALTISE posters, Robotics for All, and Dunrae Sustainability Fair.",
+    when: "April 24 (Fri)",
+    label: "Workshop 1",
+    detail: "First public workshop run. Collect feedback and capture poster evidence.",
+  },
+  {
+    when: "May 5 (Tue)",
+    label: "ScienceFest Posters to Print",
+    detail: "Intern project posters finalized and sent to print.",
+  },
+  {
+    when: "May 6 (Wed)",
+    label: "Workshop 2",
+    detail: "Second workshop run, refined. Hackathon teaser for participants.",
+  },
+  {
+    when: "May 8 (Fri)",
+    label: "Hackathon",
+    detail: "Kits distributed. Participants build with what they learned. Interns facilitate and document.",
+  },
+  {
+    when: "End of May",
+    label: "SALTISE Posters to Print",
+    detail: "Incorporating outcomes from internships, workshops, hackathon, and classroom activities.",
+  },
+  {
+    when: "June 1",
+    label: "SALTISE Posters Mounted",
+    detail: "Ready for presentation.",
   },
 ];
 
@@ -96,6 +116,9 @@ export default function HomePage() {
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/sessions/internship-launch" className="btn btn-primary">
             Open Student Launch Guide
+          </Link>
+          <Link href="/sessions/sciencefest-poster" className="btn btn-secondary">
+            ScienceFest poster guide
           </Link>
           <a href="#tracks" className="btn btn-secondary">
             View Project Tracks
@@ -133,6 +156,14 @@ export default function HomePage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="mt-8 panel p-6 border-l-4 border-[var(--teal-deep)]">
+        <h2 className="font-display text-2xl text-[var(--teal-deep)]">What&apos;s Next</h2>
+        <p className="mt-2 text-base font-semibold leading-relaxed">
+          <strong>Workshop 1 — April 24.</strong> Workshop drafts due the week of April 6.
+          New tasks are posted on every track — check your changelog.
+        </p>
       </section>
 
       <section id="tracks" className="mt-8 panel p-6">
@@ -183,6 +214,9 @@ export default function HomePage() {
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/sessions/internship-launch" className="btn btn-primary">
             Open Launch Guide
+          </Link>
+          <Link href="/sessions/sciencefest-poster" className="btn btn-secondary">
+            ScienceFest poster guide
           </Link>
         </div>
       </section>
